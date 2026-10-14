@@ -1,0 +1,1363 @@
+[
+  {
+    "leetcode_id": 167,
+    "title": "Two Sum II - Input Array Is Sorted",
+    "difficulty": "Medium",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Opposite-Directional (Collision)",
+    "secondary_patterns": [
+      "Binary Search"
+    ],
+    "prerequisites": [
+      "Sorted Arrays",
+      "Basic Pointers"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Foundational pattern recognition for utilizing sorted order to eliminate search spaces monotonically.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Incrementing both pointers on sum mismatch",
+      "Index off-by-one with 1-based indexing"
+    ],
+    "official_link": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+  },
+  {
+    "leetcode_id": 125,
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Opposite-Directional with Filtering",
+    "secondary_patterns": [
+      "String Normalization"
+    ],
+    "prerequisites": [
+      "String Traversal",
+      "Character Classification"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Teaches in-place pointer advancement while skipping non-alphanumeric characters, avoiding auxiliary allocations.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Failing to convert to lowercase",
+      "Pointer crossover boundary violations while skipping"
+    ],
+    "official_link": "https://leetcode.com/problems/valid-palindrome/"
+  },
+  {
+    "leetcode_id": 11,
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Greedy Boundary Contraction",
+    "secondary_patterns": [
+      "Greedy Choice"
+    ],
+    "prerequisites": [
+      "Two Pointers"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Develops proof-by-contradiction intuition: shrinking the width requires moving the shorter bar to have any hope of a larger area.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Moving the taller bar",
+      "Trying 2D grid DP"
+    ],
+    "official_link": "https://leetcode.com/problems/container-with-most-water/"
+  },
+  {
+    "leetcode_id": 15,
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Sorting + 2-Pointer Collision with Duplicate Skipping",
+    "secondary_patterns": [
+      "Sorting",
+      "Hash Table"
+    ],
+    "prerequisites": [
+      "Two Sum II",
+      "Custom Sorting"
+    ],
+    "time_complexity_target": "O(N^2)",
+    "space_complexity_target": "O(1) auxiliary",
+    "educational_utility": "Crucial interview problem testing duplicate handling across outer and inner loops without extra set allocations.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Using std::set to filter duplicates causing O(N^2 log N)",
+      "Failing to skip duplicates on left and right pointers"
+    ],
+    "official_link": "https://leetcode.com/problems/3sum/"
+  },
+  {
+    "leetcode_id": 75,
+    "title": "Sort Colors",
+    "difficulty": "Medium",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Dutch National Flag (Three-Way Partition)",
+    "secondary_patterns": [
+      "Array In-Place Partitioning"
+    ],
+    "prerequisites": [
+      "Pointers",
+      "Partition logic"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Mastery of strict 3-way pointer invariants (low, mid, high) where mid does not advance when swapped with high.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Incrementing index when swapping with high pointer",
+      "Falling back to two-pass counting sort instead of one-pass"
+    ],
+    "official_link": "https://leetcode.com/problems/sort-colors/"
+  },
+  {
+    "leetcode_id": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Dynamic/Variable Window with Hash Map / Direct Lookup",
+    "secondary_patterns": [
+      "Hash Table"
+    ],
+    "prerequisites": [
+      "Hash Set/Map",
+      "Array Pointers"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(min(N, Sigma))",
+    "educational_utility": "Classic variable-size sliding window expanding the right pointer and contracting the left pointer upon duplicate detection.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Shrinking left pointer by only 1 step instead of jumping past duplicate",
+      "Assuming only lowercase letters"
+    ],
+    "official_link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+  },
+  {
+    "leetcode_id": 643,
+    "title": "Maximum Average Subarray I",
+    "difficulty": "Easy",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Fixed Window Size (k)",
+    "secondary_patterns": [
+      "Prefix Sum"
+    ],
+    "prerequisites": [
+      "Basic Arrays"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Canonical introduction to fixed-length window updates: adding incoming element, subtracting outgoing element.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Recomputing sum across k elements in an inner loop O(N*k)",
+      "Floating point precision truncation"
+    ],
+    "official_link": "https://leetcode.com/problems/maximum-average-subarray-i/"
+  },
+  {
+    "leetcode_id": 209,
+    "title": "Minimum Size Subarray Sum",
+    "difficulty": "Medium",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Dynamic Window Minimization",
+    "secondary_patterns": [
+      "Prefix Sum + Binary Search"
+    ],
+    "prerequisites": [
+      "Sliding Window basics"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Teaches window contraction while condition is satisfied, finding the minimal valid window length.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Assuming array can contain negative numbers where sliding window would fail",
+      "Returning 0 when no subarray exists"
+    ],
+    "official_link": "https://leetcode.com/problems/minimum-size-subarray-sum/"
+  },
+  {
+    "leetcode_id": 76,
+    "title": "Minimum Window Substring",
+    "difficulty": "Hard",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Variable Window with Multi-Frequency Matching",
+    "secondary_patterns": [
+      "Hash Table"
+    ],
+    "prerequisites": [
+      "Fixed & Variable Sliding Window"
+    ],
+    "time_complexity_target": "O(N + M)",
+    "space_complexity_target": "O(Sigma)",
+    "educational_utility": "Cap-stone sliding window problem testing character count validation and tracking valid matched counts.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Comparing hash maps on each step O(26*N)",
+      "Handling non-matching characters incorrectly during contraction"
+    ],
+    "official_link": "https://leetcode.com/problems/minimum-window-substring/"
+  },
+  {
+    "leetcode_id": 560,
+    "title": "Subarray Sum Equals K",
+    "difficulty": "Medium",
+    "primary_pattern": "Prefix Sum",
+    "subpattern": "Prefix Sum Frequency Hashing",
+    "secondary_patterns": [
+      "Hash Table"
+    ],
+    "prerequisites": [
+      "Prefix Sum",
+      "Hash Maps"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Teaches why sliding window fails when array has negative numbers and how prefix_sum - k lookup solves arbitrary subarray sums.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Trying two-pointer sliding window on negative numbers",
+      "Forgetting mp[0] = 1 base case for prefix starting at index 0"
+    ],
+    "official_link": "https://leetcode.com/problems/subarray-sum-equals-k/"
+  },
+  {
+    "leetcode_id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "primary_pattern": "Hash Table",
+    "subpattern": "One-Pass Complement Lookup",
+    "secondary_patterns": [
+      "Array Traversal"
+    ],
+    "prerequisites": [
+      "Hash Map basics"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Foundational hash map lookup trading O(N) space for O(1) time complexity.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Two passes over map causing self-pairing bugs",
+      "Not handling duplicate elements"
+    ],
+    "official_link": "https://leetcode.com/problems/two-sum/"
+  },
+  {
+    "leetcode_id": 724,
+    "title": "Find Pivot Index",
+    "difficulty": "Easy",
+    "primary_pattern": "Prefix Sum",
+    "subpattern": "Running Left Sum vs Total Sum",
+    "secondary_patterns": [
+      "Arrays"
+    ],
+    "prerequisites": [
+      "Prefix Sum basics"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Eliminating the need for an explicit prefix array by maintaining a running sum and comparing total - current - left.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Allocating two auxiliary arrays for left and right sums",
+      "Missing edge index 0 where left sum is 0"
+    ],
+    "official_link": "https://leetcode.com/problems/find-pivot-index/"
+  },
+  {
+    "leetcode_id": 704,
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Exact Target Search",
+    "secondary_patterns": [
+      "Divide and Conquer"
+    ],
+    "prerequisites": [
+      "Sorted Arrays"
+    ],
+    "time_complexity_target": "O(log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Fundamental loop invariants: left <= right vs left < right, mid calculation avoiding integer overflow.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Using (left + right) / 2 causing integer overflow",
+      "Off-by-one with while (left < right)"
+    ],
+    "official_link": "https://leetcode.com/problems/binary-search/"
+  },
+  {
+    "leetcode_id": 33,
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Modified Binary Search on Sorted Half",
+    "secondary_patterns": [
+      "Array Discontinuities"
+    ],
+    "prerequisites": [
+      "Binary Search basics"
+    ],
+    "time_complexity_target": "O(log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "High-frequency interview question: determining which half is normally sorted and checking if target lies within that boundary.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Trying to find pivot point first in O(N)",
+      "Inequality check missing equality bounds: nums[left] <= nums[mid]"
+    ],
+    "official_link": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+  },
+  {
+    "leetcode_id": 875,
+    "title": "Koko Eating Bananas",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Binary Search on Answer Space (Monotonic Predicate)",
+    "secondary_patterns": [
+      "Greedy Feasibility Check"
+    ],
+    "prerequisites": [
+      "Binary Search",
+      "Predicate Function"
+    ],
+    "time_complexity_target": "O(N log(max_pile))",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Teaches students to identify monotonic decision functions: if speed K works, all K' > K work, converting an optimization problem into binary search.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Setting search space to array indices instead of [1, max(piles)]",
+      "Integer division truncation in hours calculation"
+    ],
+    "official_link": "https://leetcode.com/problems/koko-eating-bananas/"
+  },
+  {
+    "leetcode_id": 1011,
+    "title": "Capacity To Ship Packages Within D Days",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Binary Search on Answer Space (Greedy Capacity)",
+    "secondary_patterns": [
+      "Greedy Feasibility"
+    ],
+    "prerequisites": [
+      "Koko Eating Bananas",
+      "Greedy Partitioning"
+    ],
+    "time_complexity_target": "O(N log(sum - max))",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Reinforces answer-space search boundaries: lower bound is max(weights), upper bound is sum(weights).",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Setting lower bound to 1 instead of max(weights)",
+      "Incorrect day count when current weight fits exactly"
+    ],
+    "official_link": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+  },
+  {
+    "leetcode_id": 162,
+    "title": "Find Peak Element",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Slope / Derivative Comparison",
+    "secondary_patterns": [
+      "Arrays"
+    ],
+    "prerequisites": [
+      "Binary Search"
+    ],
+    "time_complexity_target": "O(log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Shows that binary search applies to unsorted arrays whenever a local gradient guarantees the existence of an answer.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Linear search O(N)",
+      "Comparing mid with both neighbors without handling array bounds"
+    ],
+    "official_link": "https://leetcode.com/problems/find-peak-element/"
+  },
+  {
+    "leetcode_id": 496,
+    "title": "Next Greater Element I",
+    "difficulty": "Easy",
+    "primary_pattern": "Monotonic Stack",
+    "subpattern": "Next Greater Element (Decreasing Stack)",
+    "secondary_patterns": [
+      "Hash Table"
+    ],
+    "prerequisites": [
+      "Stack basics"
+    ],
+    "time_complexity_target": "O(N + M)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Foundational monotonic stack problem demonstrating how unresolved elements wait in a decreasing stack until a greater element arrives.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Nested loops O(N^2)",
+      "Pushing elements into hash map without resolving previous smaller elements"
+    ],
+    "official_link": "https://leetcode.com/problems/next-greater-element-i/"
+  },
+  {
+    "leetcode_id": 739,
+    "title": "Daily Temperatures",
+    "difficulty": "Medium",
+    "primary_pattern": "Monotonic Stack",
+    "subpattern": "Next Greater Distance (Index Stack)",
+    "secondary_patterns": [
+      "Array"
+    ],
+    "prerequisites": [
+      "Monotonic Stack"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Storing indices instead of values on the stack to calculate distances directly in O(N) total push/pop operations.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Storing values instead of indices on the stack",
+      "Assuming stack operations inside while loop make it O(N^2)"
+    ],
+    "official_link": "https://leetcode.com/problems/daily-temperatures/"
+  },
+  {
+    "leetcode_id": 84,
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "primary_pattern": "Monotonic Stack",
+    "subpattern": "Previous & Next Smaller Element Boundaries",
+    "secondary_patterns": [
+      "Stack"
+    ],
+    "prerequisites": [
+      "Monotonic Stack",
+      "Daily Temperatures"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Essential placement problem teaching how the popped element's height defines the rectangle while the current index and top define boundaries.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Computing width incorrectly when stack becomes empty",
+      "Failing to flush remaining elements after array traversal"
+    ],
+    "official_link": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+  },
+  {
+    "leetcode_id": 206,
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "In-Place Pointer Reversal (Iterative & Recursive)",
+    "secondary_patterns": [
+      "Recursion"
+    ],
+    "prerequisites": [
+      "Linked List node structure"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Crucial pointer manipulation: maintaining prev, curr, and next pointers without losing track of remaining nodes.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Creating new nodes instead of reversing in place",
+      "Null pointer dereference on curr->next before saving"
+    ],
+    "official_link": "https://leetcode.com/problems/reverse-linked-list/"
+  },
+  {
+    "leetcode_id": 141,
+    "title": "Linked List Cycle",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "Floyd's Tortoise and Hare (Fast & Slow)",
+    "secondary_patterns": [
+      "Two Pointers"
+    ],
+    "prerequisites": [
+      "Linked List basics"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Classic space-optimization: eliminating hash set of visited pointers using relative speed difference.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Checking fast->next without checking fast itself",
+      "Using hash table consuming O(N) memory"
+    ],
+    "official_link": "https://leetcode.com/problems/linked-list-cycle/"
+  },
+  {
+    "leetcode_id": 21,
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "Dummy Head Splicing",
+    "secondary_patterns": [
+      "Two Pointers"
+    ],
+    "prerequisites": [
+      "Linked Lists"
+    ],
+    "time_complexity_target": "O(N + M)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Idiomatic use of a dummy/sentinel node to eliminate special-case code for the head of the merged list.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Memory leak or unnecessary new node allocations",
+      "Forgetting to link remaining nodes when one list finishes"
+    ],
+    "official_link": "https://leetcode.com/problems/merge-two-sorted-lists/"
+  },
+  {
+    "leetcode_id": 19,
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "primary_pattern": "Linked List",
+    "subpattern": "Fixed Gap Two Pointers",
+    "secondary_patterns": [
+      "Dummy Head"
+    ],
+    "prerequisites": [
+      "Linked List traversal"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "One-pass deletion maintaining a gap of n nodes between fast and slow pointers.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Two passes (counting length first)",
+      "Failing when n equals list length (deleting head) without dummy head"
+    ],
+    "official_link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+  },
+  {
+    "leetcode_id": 104,
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Depth-First Search (Bottom-Up Return Value)",
+    "secondary_patterns": [
+      "Recursion",
+      "BFS Level Order"
+    ],
+    "prerequisites": [
+      "Binary Tree definition",
+      "Recursion basics"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "The fundamental tree recursion archetype: 1 + max(depth(left), depth(right)).",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Missing base case node == nullptr returning 0",
+      "Confusing height with node count"
+    ],
+    "official_link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+  },
+  {
+    "leetcode_id": 102,
+    "title": "Binary Tree Level Order Traversal",
+    "difficulty": "Medium",
+    "primary_pattern": "Tree",
+    "subpattern": "Breadth-First Search (Queue with Level Sizing)",
+    "secondary_patterns": [
+      "Queue"
+    ],
+    "prerequisites": [
+      "Queue basics",
+      "Binary Trees"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(W)",
+    "educational_utility": "Queue level-sizing snapshot idiom (int sz = q.size()) to group nodes strictly by level.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Pushing children and changing loop size dynamically without snapshotting sz",
+      "Pushing null nodes into queue"
+    ],
+    "official_link": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+  },
+  {
+    "leetcode_id": 543,
+    "title": "Diameter of Binary Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Post-Order DFS with Global Maximum Tracking",
+    "secondary_patterns": [
+      "DFS Return Value vs Side Effect"
+    ],
+    "prerequisites": [
+      "Maximum Depth of Binary Tree"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Teaches the pattern where a recursive function returns one metric (height) to its parent while updating another metric (diameter) across the current node.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Calling maxDepth separately inside each node causing O(N^2)",
+      "Assuming diameter must pass through root"
+    ],
+    "official_link": "https://leetcode.com/problems/diameter-of-binary-tree/"
+  },
+  {
+    "leetcode_id": 98,
+    "title": "Validate Binary Search Tree",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search Tree",
+    "subpattern": "Valid Range Invariant Propagation (min_val < node->val < max_val)",
+    "secondary_patterns": [
+      "Inorder Traversal"
+    ],
+    "prerequisites": [
+      "BST definition",
+      "Recursion with limits"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "High-frequency placement question: checking only immediate children is insufficient; ancestral range limits must be propagated.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Only checking left < root and right > root",
+      "Using INT_MIN/INT_MAX without long long causing overflow when node value is INT_MIN"
+    ],
+    "official_link": "https://leetcode.com/problems/validate-binary-search-tree/"
+  },
+  {
+    "leetcode_id": 235,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search Tree",
+    "subpattern": "BST Value Splitting Traversal",
+    "secondary_patterns": [
+      "Binary Search"
+    ],
+    "prerequisites": [
+      "BST Properties"
+    ],
+    "time_complexity_target": "O(H)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Exploiting BST sorted order: if both p and q are smaller, branch left; if both greater, branch right; otherwise current node is split point.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Using generic tree LCA O(N) when BST structure allows O(H)",
+      "Recursion without tail-call optimization"
+    ],
+    "official_link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+  },
+  {
+    "leetcode_id": 200,
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Grid Traversal (Connected Components via DFS/BFS)",
+    "secondary_patterns": [
+      "Matrix",
+      "Queue"
+    ],
+    "prerequisites": [
+      "Grid boundary checks",
+      "Recursion or Queue"
+    ],
+    "time_complexity_target": "O(M * N)",
+    "space_complexity_target": "O(M * N)",
+    "educational_utility": "The universal standard problem for 2D grid graph traversal and in-place island sinking / visited marking.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Stack overflow on deep recursion without sinking cell first",
+      "Checking visited after pushing to queue in BFS instead of before"
+    ],
+    "official_link": "https://leetcode.com/problems/number-of-islands/"
+  },
+  {
+    "leetcode_id": 994,
+    "title": "Rotting Oranges",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Multi-Source Breadth-First Search (Level Sizing)",
+    "secondary_patterns": [
+      "Queue",
+      "Grid Traversal"
+    ],
+    "prerequisites": [
+      "BFS Level Order",
+      "Grid graphs"
+    ],
+    "time_complexity_target": "O(M * N)",
+    "space_complexity_target": "O(M * N)",
+    "educational_utility": "Essential multi-source BFS archetype where all initial rotten oranges enqueue at t=0, measuring shortest elapsed time.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Running individual BFS for each rotten orange",
+      "Incrementing time counter even when no fresh orange rotted"
+    ],
+    "official_link": "https://leetcode.com/problems/rotting-oranges/"
+  },
+  {
+    "leetcode_id": 547,
+    "title": "Number of Provinces",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Adjacency Matrix Connected Components (DFS / DSU)",
+    "secondary_patterns": [
+      "Disjoint Set Union (DSU)"
+    ],
+    "prerequisites": [
+      "Graph representations",
+      "Visited array"
+    ],
+    "time_complexity_target": "O(N^2)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Introduces adjacency matrix graph traversal and serves as the bridge between standard DFS and Disjoint Set Union (Union-Find).",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Treating matrix elements as grid cells rather than node-to-node edges",
+      "Not visiting all nodes in outer loop"
+    ],
+    "official_link": "https://leetcode.com/problems/number-of-provinces/"
+  },
+  {
+    "leetcode_id": 207,
+    "title": "Course Schedule",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Cycle Detection in Directed Graph / Topological Sort (Kahn's)",
+    "secondary_patterns": [
+      "Indegree Queue",
+      "DFS 3-State Coloring"
+    ],
+    "prerequisites": [
+      "Directed Graph representation",
+      "Indegrees"
+    ],
+    "time_complexity_target": "O(V + E)",
+    "space_complexity_target": "O(V + E)",
+    "educational_utility": "Prime placement problem for detecting deadlock/cycles in dependency graphs using BFS indegrees (Kahn's Algorithm).",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Treating directed graph as undirected",
+      "Failing to check if processed node count equals V for cycle verdict"
+    ],
+    "official_link": "https://leetcode.com/problems/course-schedule/"
+  },
+  {
+    "leetcode_id": 133,
+    "title": "Clone Graph",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Graph Copying with Visited Node Hash Mapping (DFS/BFS)",
+    "secondary_patterns": [
+      "Hash Map"
+    ],
+    "prerequisites": [
+      "Graph node pointers",
+      "DFS"
+    ],
+    "time_complexity_target": "O(V + E)",
+    "space_complexity_target": "O(V)",
+    "educational_utility": "Teaches cycle handling during deep copying by caching cloned nodes in a map: old_node -> new_node.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Infinite recursion on cycles without map lookup",
+      "Cloning edges before cloning neighbor nodes"
+    ],
+    "official_link": "https://leetcode.com/problems/clone-graph/"
+  },
+  {
+    "leetcode_id": 743,
+    "title": "Network Delay Time",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Shortest Path (Dijkstra's with Min-Heap)",
+    "secondary_patterns": [
+      "Heap / Priority Queue"
+    ],
+    "prerequisites": [
+      "Weighted Graphs",
+      "std::priority_queue"
+    ],
+    "time_complexity_target": "O(E log V)",
+    "space_complexity_target": "O(V + E)",
+    "educational_utility": "Standard Dijkstra implementation using priority queue with distance relaxation.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Using unweighted BFS queue instead of min-heap",
+      "Not skipping stale nodes in priority queue"
+    ],
+    "official_link": "https://leetcode.com/problems/network-delay-time/"
+  },
+  {
+    "leetcode_id": 70,
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "1D Linear Recurrence (Fibonacci State)",
+    "secondary_patterns": [
+      "Memoization",
+      "Space Optimization"
+    ],
+    "prerequisites": [
+      "Recursion",
+      "State transition"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "The gateway DP problem: identifying overlapping subproblems and reducing O(N) auxiliary space to O(1) rolling variables.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Unmemoized recursion causing 2^N TLE",
+      "Allocating unnecessary vector<int> when only 2 states needed"
+    ],
+    "official_link": "https://leetcode.com/problems/climbing-stairs/"
+  },
+  {
+    "leetcode_id": 198,
+    "title": "House Robber",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Take / Skip Decision",
+    "secondary_patterns": [
+      "1D DP"
+    ],
+    "prerequisites": [
+      "1D recurrence"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Formulating binary choices: dp[i] = max(dp[i-1], dp[i-2] + nums[i]).",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Greedy picking largest elements",
+      "Off-by-one on base cases for arrays of length 1 or 2"
+    ],
+    "official_link": "https://leetcode.com/problems/house-robber/"
+  },
+  {
+    "leetcode_id": 322,
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Unbounded Knapsack (Minimization)",
+    "secondary_patterns": [
+      "BFS Shortest Path"
+    ],
+    "prerequisites": [
+      "1D DP",
+      "Knapsack"
+    ],
+    "time_complexity_target": "O(amount * coins.length)",
+    "space_complexity_target": "O(amount)",
+    "educational_utility": "Teaches unbounded knapsack state transition with an impossible sentinel value (amount + 1 or INF).",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Greedy approach picking largest coin (fails for coins=[1, 3, 4], amount=6)",
+      "Integer overflow when using INT_MAX + 1"
+    ],
+    "official_link": "https://leetcode.com/problems/coin-change/"
+  },
+  {
+    "leetcode_id": 300,
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Subsequence Extension & Patience Sorting (O(N^2) to O(N log N))",
+    "secondary_patterns": [
+      "Binary Search"
+    ],
+    "prerequisites": [
+      "Subsequence DP",
+      "std::lower_bound"
+    ],
+    "time_complexity_target": "O(N log N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Pivotal transition from O(N^2) state checking to O(N log N) patience sorting via binary search.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Assuming the tails array represents the actual LIS rather than optimal tail candidates",
+      "O(N^2) quadratic checks"
+    ],
+    "official_link": "https://leetcode.com/problems/longest-increasing-subsequence/"
+  },
+  {
+    "leetcode_id": 1143,
+    "title": "Longest Common Subsequence",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "2D String Grid DP (Match vs Mismatch)",
+    "secondary_patterns": [
+      "String Matching"
+    ],
+    "prerequisites": [
+      "2D DP table"
+    ],
+    "time_complexity_target": "O(M * N)",
+    "space_complexity_target": "O(min(M, N))",
+    "educational_utility": "Standard 2D dynamic programming grid problem establishing the base for Edit Distance, Shortest Common Supersequence, and diff tools.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Confusing substring (contiguous) with subsequence (non-contiguous)",
+      "Base case alignment in 1-indexed DP table"
+    ],
+    "official_link": "https://leetcode.com/problems/longest-common-subsequence/"
+  },
+  {
+    "leetcode_id": 62,
+    "title": "Unique Paths",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "2D Grid Path Accumulation",
+    "secondary_patterns": [
+      "Combinatorics"
+    ],
+    "prerequisites": [
+      "Grid traversal",
+      "2D table"
+    ],
+    "time_complexity_target": "O(M * N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Foundational grid DP: dp[i][j] = dp[i-1][j] + dp[i][j-1], reducible to a 1D rolling vector.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Full 2D table when only previous row is needed",
+      "Combinatorics overflow with large factorials"
+    ],
+    "official_link": "https://leetcode.com/problems/unique-paths/"
+  },
+  {
+    "leetcode_id": 56,
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "primary_pattern": "Intervals",
+    "subpattern": "Sorting by Start Time & Merging Overlaps",
+    "secondary_patterns": [
+      "Custom Sorting"
+    ],
+    "prerequisites": [
+      "Sorting in C++",
+      "Interval Representation"
+    ],
+    "time_complexity_target": "O(N log N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Top-frequency interview problem: sorting by start boundary and expanding end boundary whenever intervals overlap.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Failing to sort before checking overlap",
+      "Using end = interval[1] instead of max(end, interval[1])"
+    ],
+    "official_link": "https://leetcode.com/problems/merge-intervals/"
+  },
+  {
+    "leetcode_id": 435,
+    "title": "Non-overlapping Intervals",
+    "difficulty": "Medium",
+    "primary_pattern": "Intervals",
+    "subpattern": "Greedy Interval Scheduling (Sort by End Time)",
+    "secondary_patterns": [
+      "Greedy Choice"
+    ],
+    "prerequisites": [
+      "Custom Sorting",
+      "Greedy"
+    ],
+    "time_complexity_target": "O(N log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Teaches classical Interval Scheduling: sorting by end time minimizes overlap opportunities, maximizing non-overlapping intervals.",
+    "provenance": "curated_core",
+    "previously_solved_by_user": false,
+    "user_solution_reviewed": false,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Sorting by start time instead of end time",
+      "Removing intervals rather than greedily updating last valid end"
+    ],
+    "official_link": "https://leetcode.com/problems/non-overlapping-intervals/"
+  },
+  {
+    "leetcode_id": 215,
+    "title": "Kth Largest Element in an Array",
+    "difficulty": "Medium",
+    "primary_pattern": "Heap (Priority Queue)",
+    "subpattern": "Min-Heap of Size K (vs Quickselect)",
+    "secondary_patterns": [
+      "Quickselect",
+      "Divide & Conquer"
+    ],
+    "prerequisites": [
+      "std::priority_queue",
+      "Binary Heap properties"
+    ],
+    "time_complexity_target": "O(N log K)",
+    "space_complexity_target": "O(K)",
+    "educational_utility": "Comparing Min-Heap of size K (O(N log K) time, O(K) space) with in-place Quickselect (O(N) average time).",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Sorting entire array O(N log N)",
+      "Max-heap of size N consuming O(N) space instead of min-heap of size K"
+    ],
+    "official_link": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+  },
+  {
+    "leetcode_id": 1046,
+    "title": "Last Stone Weight",
+    "difficulty": "Easy",
+    "primary_pattern": "Heap (Priority Queue)",
+    "subpattern": "Max-Heap Simulation",
+    "secondary_patterns": [
+      "Simulation"
+    ],
+    "prerequisites": [
+      "std::priority_queue"
+    ],
+    "time_complexity_target": "O(N log N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Clean introduction to maintaining sorted maximum elements under dynamic insertions and deletions.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Re-sorting array after each stone collision O(N^2 log N)",
+      "Failing when heap becomes empty"
+    ],
+    "official_link": "https://leetcode.com/problems/last-stone-weight/"
+  },
+  {
+    "leetcode_id": 78,
+    "title": "Subsets",
+    "difficulty": "Medium",
+    "primary_pattern": "Backtracking",
+    "subpattern": "Cascading Power Set / Pick vs Skip",
+    "secondary_patterns": [
+      "Bit Manipulation"
+    ],
+    "prerequisites": [
+      "Recursion",
+      "State backtracking"
+    ],
+    "time_complexity_target": "O(N * 2^N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Foundational backtracking archetype: exploring the include/exclude decision tree with state restoration (push_back / pop_back).",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Forgetting to pop_back() after recursive call",
+      "Passing path by value creating unnecessary copies"
+    ],
+    "official_link": "https://leetcode.com/problems/subsets/"
+  },
+  {
+    "leetcode_id": 39,
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "primary_pattern": "Backtracking",
+    "subpattern": "Unbounded Choice with Pruning",
+    "secondary_patterns": [
+      "Recursion"
+    ],
+    "prerequisites": [
+      "Subsets",
+      "Pruning"
+    ],
+    "time_complexity_target": "O(2^target)",
+    "space_complexity_target": "O(target)",
+    "educational_utility": "Backtracking where the same element may be chosen repeatedly, requiring index persistence and target reduction.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Restarting search from index 0 creating duplicate permutations",
+      "Failing to prune when remaining sum < 0"
+    ],
+    "official_link": "https://leetcode.com/problems/combination-sum/"
+  },
+  {
+    "leetcode_id": 22,
+    "title": "Generate Parentheses",
+    "difficulty": "Medium",
+    "primary_pattern": "Backtracking",
+    "subpattern": "Constrained State Construction (Open vs Close Balances)",
+    "secondary_patterns": [
+      "Recursion"
+    ],
+    "prerequisites": [
+      "Recursion",
+      "String State"
+    ],
+    "time_complexity_target": "O(4^N / sqrt(N)) Catalan",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "State constraints: only place '(' if open < n; only place ')' if close < open.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Generating all 2^(2N) strings and validating afterward",
+      "Improper balance tracking"
+    ],
+    "official_link": "https://leetcode.com/problems/generate-parentheses/"
+  },
+  {
+    "leetcode_id": 208,
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "Medium",
+    "primary_pattern": "Trie",
+    "subpattern": "N-ary Prefix Tree Node Design",
+    "secondary_patterns": [
+      "Design"
+    ],
+    "prerequisites": [
+      "Pointers",
+      "Character indexing"
+    ],
+    "time_complexity_target": "O(L) per word",
+    "space_complexity_target": "O(Sigma * L * N)",
+    "educational_utility": "Core data structure implementation: TrieNode with child pointers array and is_end_of_word boolean flag.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Memory leaks without destructor",
+      "Confusing startsWith (prefix match) with search (exact word match)"
+    ],
+    "official_link": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+  },
+  {
+    "leetcode_id": 14,
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "primary_pattern": "String Matching",
+    "subpattern": "Vertical Scanning / Trie Simulation",
+    "secondary_patterns": [
+      "Trie"
+    ],
+    "prerequisites": [
+      "String iteration"
+    ],
+    "time_complexity_target": "O(N * L)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Vertical character comparison stopping at the first mismatch across all strings.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Out of bounds indexing when strings have unequal lengths",
+      "Unnecessary sorting of the entire vector"
+    ],
+    "official_link": "https://leetcode.com/problems/longest-common-prefix/"
+  },
+  {
+    "leetcode_id": 121,
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "primary_pattern": "Greedy / One-Pass",
+    "subpattern": "Track Minimum Prefix",
+    "secondary_patterns": [
+      "Dynamic Programming"
+    ],
+    "prerequisites": [
+      "Array Traversal"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Maintaining running minimum buy price to compute optimal sell profit in a single linear pass.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Subtracting global min from global max regardless of time order",
+      "O(N^2) double loop"
+    ],
+    "official_link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  {
+    "leetcode_id": 53,
+    "title": "Maximum Subarray",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming / Kadane",
+    "subpattern": "Contiguous Subarray Optimization (Local vs Global Best)",
+    "secondary_patterns": [
+      "Divide and Conquer"
+    ],
+    "prerequisites": [
+      "Array Traversal"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Kadane's algorithm: deciding whether to extend previous subarray or start fresh from current element.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "verified",
+    "common_misconceptions": [
+      "Resetting max_sum to 0 (failing on all-negative arrays)",
+      "Nested loops O(N^2)"
+    ],
+    "official_link": "https://leetcode.com/problems/maximum-subarray/"
+  },
+  {
+    "leetcode_id": 136,
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "primary_pattern": "Bit Manipulation",
+    "subpattern": "XOR Involutive Cancellation (A ^ A = 0)",
+    "secondary_patterns": [
+      "Hash Table"
+    ],
+    "prerequisites": [
+      "Bitwise Operators"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "XOR identity: A ^ A = 0, A ^ 0 = A. Eliminates hash sets entirely.",
+    "provenance": "user_repo",
+    "previously_solved_by_user": true,
+    "user_solution_reviewed": true,
+    "verification_status": "planned",
+    "common_misconceptions": [
+      "Using hash map O(N) space",
+      "Sorting array O(N log N) time"
+    ],
+    "official_link": "https://leetcode.com/problems/single-number/"
+  }
+]

@@ -1,0 +1,1362 @@
+[
+  {
+    "leetcode_id": 217,
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "primary_pattern": "Arrays & Hashing",
+    "subpattern": "Membership set",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Hash lookup and equality"
+    ],
+    "time_complexity_target": "O(N) expected",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about membership set and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/contains-duplicate/"
+  },
+  {
+    "leetcode_id": 242,
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "primary_pattern": "Arrays & Hashing",
+    "subpattern": "Character frequency",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Hash lookup and equality"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(A)",
+    "educational_utility": "Practice reasoning about character frequency and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/valid-anagram/"
+  },
+  {
+    "leetcode_id": 49,
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "primary_pattern": "Arrays & Hashing",
+    "subpattern": "Canonical grouping key",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Hash lookup and equality"
+    ],
+    "time_complexity_target": "O(N K log K)",
+    "space_complexity_target": "O(N K)",
+    "educational_utility": "Practice reasoning about canonical grouping key and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/group-anagrams/"
+  },
+  {
+    "leetcode_id": 128,
+    "title": "Longest Consecutive Sequence",
+    "difficulty": "Medium",
+    "primary_pattern": "Arrays & Hashing",
+    "subpattern": "Sequence starts",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Hash lookup and equality"
+    ],
+    "time_complexity_target": "O(N) expected",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about sequence starts and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/longest-consecutive-sequence/"
+  },
+  {
+    "leetcode_id": 238,
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "primary_pattern": "Arrays & Hashing",
+    "subpattern": "Prefix and suffix products",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Hash lookup and equality"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about prefix and suffix products and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/product-of-array-except-self/"
+  },
+  {
+    "leetcode_id": 169,
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "primary_pattern": "Arrays & Hashing",
+    "subpattern": "Majority voting",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Hash lookup and equality"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about majority voting and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/majority-element/"
+  },
+  {
+    "leetcode_id": 88,
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Backward merge",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Index bounds",
+      "Sorted order or stable compaction"
+    ],
+    "time_complexity_target": "O(N+M)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about backward merge and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/merge-sorted-array/"
+  },
+  {
+    "leetcode_id": 26,
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Read and write positions",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Index bounds",
+      "Sorted order or stable compaction"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about read and write positions and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+  },
+  {
+    "leetcode_id": 27,
+    "title": "Remove Element",
+    "difficulty": "Easy",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "In-place filtering",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Index bounds",
+      "Sorted order or stable compaction"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about in-place filtering and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/remove-element/"
+  },
+  {
+    "leetcode_id": 283,
+    "title": "Move Zeroes",
+    "difficulty": "Easy",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Stable compaction",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Index bounds",
+      "Sorted order or stable compaction"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about stable compaction and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/move-zeroes/"
+  },
+  {
+    "leetcode_id": 977,
+    "title": "Squares of a Sorted Array",
+    "difficulty": "Easy",
+    "primary_pattern": "Two Pointers",
+    "subpattern": "Extreme magnitudes",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Index bounds",
+      "Sorted order or stable compaction"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about extreme magnitudes and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/squares-of-a-sorted-array/"
+  },
+  {
+    "leetcode_id": 424,
+    "title": "Longest Repeating Character Replacement",
+    "difficulty": "Medium",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Frequency budget",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Contiguous ranges",
+      "Incremental frequency or budget state"
+    ],
+    "time_complexity_target": "O(N A)",
+    "space_complexity_target": "O(A)",
+    "educational_utility": "Practice reasoning about frequency budget and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+  },
+  {
+    "leetcode_id": 567,
+    "title": "Permutation in String",
+    "difficulty": "Medium",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Fixed frequency window",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Contiguous ranges",
+      "Incremental frequency or budget state"
+    ],
+    "time_complexity_target": "O(N+M)",
+    "space_complexity_target": "O(A)",
+    "educational_utility": "Practice reasoning about fixed frequency window and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/permutation-in-string/"
+  },
+  {
+    "leetcode_id": 438,
+    "title": "Find All Anagrams in a String",
+    "difficulty": "Medium",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Anagram window positions",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Contiguous ranges",
+      "Incremental frequency or budget state"
+    ],
+    "time_complexity_target": "O(N+M)",
+    "space_complexity_target": "O(A)",
+    "educational_utility": "Practice reasoning about anagram window positions and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/find-all-anagrams-in-a-string/"
+  },
+  {
+    "leetcode_id": 1004,
+    "title": "Max Consecutive Ones III",
+    "difficulty": "Medium",
+    "primary_pattern": "Sliding Window",
+    "subpattern": "Bounded zero budget",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Contiguous ranges",
+      "Incremental frequency or budget state"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about bounded zero budget and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+  },
+  {
+    "leetcode_id": 35,
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Insertion boundary",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Sorted order",
+      "Interval boundaries and monotonic predicates"
+    ],
+    "time_complexity_target": "O(log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about insertion boundary and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/search-insert-position/"
+  },
+  {
+    "leetcode_id": 34,
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "First and last boundaries",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Sorted order",
+      "Interval boundaries and monotonic predicates"
+    ],
+    "time_complexity_target": "O(log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about first and last boundaries and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+  },
+  {
+    "leetcode_id": 153,
+    "title": "Find Minimum in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Rotated minimum",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Sorted order",
+      "Interval boundaries and monotonic predicates"
+    ],
+    "time_complexity_target": "O(log N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about rotated minimum and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+  },
+  {
+    "leetcode_id": 74,
+    "title": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Flattened ordered matrix",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Sorted order",
+      "Interval boundaries and monotonic predicates"
+    ],
+    "time_complexity_target": "O(log(R C))",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about flattened ordered matrix and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/search-a-2d-matrix/"
+  },
+  {
+    "leetcode_id": 69,
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Integer answer boundary",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Sorted order",
+      "Interval boundaries and monotonic predicates"
+    ],
+    "time_complexity_target": "O(log X)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about integer answer boundary and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/sqrtx/"
+  },
+  {
+    "leetcode_id": 367,
+    "title": "Valid Perfect Square",
+    "difficulty": "Easy",
+    "primary_pattern": "Binary Search",
+    "subpattern": "Exact integer predicate",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Sorted order",
+      "Interval boundaries and monotonic predicates"
+    ],
+    "time_complexity_target": "O(log X)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about exact integer predicate and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/valid-perfect-square/"
+  },
+  {
+    "leetcode_id": 303,
+    "title": "Range Sum Query - Immutable",
+    "difficulty": "Easy",
+    "primary_pattern": "Prefix Sum",
+    "subpattern": "Immutable range sum",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Wide integer arithmetic"
+    ],
+    "time_complexity_target": "O(N) build; O(1) query",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about immutable range sum and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/range-sum-query-immutable/"
+  },
+  {
+    "leetcode_id": 523,
+    "title": "Continuous Subarray Sum",
+    "difficulty": "Medium",
+    "primary_pattern": "Prefix Sum",
+    "subpattern": "Prefix remainder matching",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Wide integer arithmetic"
+    ],
+    "time_complexity_target": "O(N) expected",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about prefix remainder matching and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/continuous-subarray-sum/"
+  },
+  {
+    "leetcode_id": 525,
+    "title": "Contiguous Array",
+    "difficulty": "Medium",
+    "primary_pattern": "Prefix Sum",
+    "subpattern": "Balanced signed prefix",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Wide integer arithmetic"
+    ],
+    "time_complexity_target": "O(N) expected",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about balanced signed prefix and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/contiguous-array/"
+  },
+  {
+    "leetcode_id": 1480,
+    "title": "Running Sum of 1d Array",
+    "difficulty": "Easy",
+    "primary_pattern": "Prefix Sum",
+    "subpattern": "Running accumulation",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Array traversal",
+      "Wide integer arithmetic"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1) auxiliary",
+    "educational_utility": "Practice reasoning about running accumulation and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/running-sum-of-1d-array/"
+  },
+  {
+    "leetcode_id": 28,
+    "title": "Find the Index of the First Occurrence in a String",
+    "difficulty": "Easy",
+    "primary_pattern": "Strings",
+    "subpattern": "Substring matching",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "String indexing",
+      "Character equality and normalization"
+    ],
+    "time_complexity_target": "O(N M) simple scan",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about substring matching and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+  },
+  {
+    "leetcode_id": 205,
+    "title": "Isomorphic Strings",
+    "difficulty": "Easy",
+    "primary_pattern": "Strings",
+    "subpattern": "Bidirectional character mapping",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "String indexing",
+      "Character equality and normalization"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(A)",
+    "educational_utility": "Practice reasoning about bidirectional character mapping and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/isomorphic-strings/"
+  },
+  {
+    "leetcode_id": 290,
+    "title": "Word Pattern",
+    "difficulty": "Easy",
+    "primary_pattern": "Strings",
+    "subpattern": "Symbol to word bijection",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "String indexing",
+      "Character equality and normalization"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about symbol to word bijection and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/word-pattern/"
+  },
+  {
+    "leetcode_id": 387,
+    "title": "First Unique Character in a String",
+    "difficulty": "Easy",
+    "primary_pattern": "Strings",
+    "subpattern": "First unique character",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "String indexing",
+      "Character equality and normalization"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(A)",
+    "educational_utility": "Practice reasoning about first unique character and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/first-unique-character-in-a-string/"
+  },
+  {
+    "leetcode_id": 344,
+    "title": "Reverse String",
+    "difficulty": "Easy",
+    "primary_pattern": "Strings",
+    "subpattern": "In-place reversal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "String indexing",
+      "Character equality and normalization"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about in-place reversal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/reverse-string/"
+  },
+  {
+    "leetcode_id": 392,
+    "title": "Is Subsequence",
+    "difficulty": "Easy",
+    "primary_pattern": "Strings",
+    "subpattern": "Subsequence scanning",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "String indexing",
+      "Character equality and normalization"
+    ],
+    "time_complexity_target": "O(N+M)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about subsequence scanning and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/is-subsequence/"
+  },
+  {
+    "leetcode_id": 20,
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "primary_pattern": "Stacks & Queues",
+    "subpattern": "Balanced delimiters",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "LIFO and FIFO operations",
+      "Empty-container checks"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about balanced delimiters and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  {
+    "leetcode_id": 155,
+    "title": "Min Stack",
+    "difficulty": "Medium",
+    "primary_pattern": "Stacks & Queues",
+    "subpattern": "Minimum tracking",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "LIFO and FIFO operations",
+      "Empty-container checks"
+    ],
+    "time_complexity_target": "O(1) per operation",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about minimum tracking and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/min-stack/"
+  },
+  {
+    "leetcode_id": 232,
+    "title": "Implement Queue using Stacks",
+    "difficulty": "Easy",
+    "primary_pattern": "Stacks & Queues",
+    "subpattern": "Two-stack queue",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "LIFO and FIFO operations",
+      "Empty-container checks"
+    ],
+    "time_complexity_target": "O(1) amortized",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about two-stack queue and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/implement-queue-using-stacks/"
+  },
+  {
+    "leetcode_id": 225,
+    "title": "Implement Stack using Queues",
+    "difficulty": "Easy",
+    "primary_pattern": "Stacks & Queues",
+    "subpattern": "Queue rotation",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "LIFO and FIFO operations",
+      "Empty-container checks"
+    ],
+    "time_complexity_target": "O(N) push; O(1) pop",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about queue rotation and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/implement-stack-using-queues/"
+  },
+  {
+    "leetcode_id": 150,
+    "title": "Evaluate Reverse Polish Notation",
+    "difficulty": "Medium",
+    "primary_pattern": "Stacks & Queues",
+    "subpattern": "Postfix evaluation",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "LIFO and FIFO operations",
+      "Empty-container checks"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about postfix evaluation and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+  },
+  {
+    "leetcode_id": 503,
+    "title": "Next Greater Element II",
+    "difficulty": "Medium",
+    "primary_pattern": "Monotonic Stack",
+    "subpattern": "Circular next greater",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Stack operations",
+      "Value dominance and index tracking"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about circular next greater and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/next-greater-element-ii/"
+  },
+  {
+    "leetcode_id": 876,
+    "title": "Middle of the Linked List",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "Fast and slow positions",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Node identity",
+      "Pointer updates and null checks"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about fast and slow positions and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/middle-of-the-linked-list/"
+  },
+  {
+    "leetcode_id": 160,
+    "title": "Intersection of Two Linked Lists",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "Equalized path lengths",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Node identity",
+      "Pointer updates and null checks"
+    ],
+    "time_complexity_target": "O(N+M)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about equalized path lengths and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+  },
+  {
+    "leetcode_id": 234,
+    "title": "Palindrome Linked List",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "Half reversal comparison",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Node identity",
+      "Pointer updates and null checks"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about half reversal comparison and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/palindrome-linked-list/"
+  },
+  {
+    "leetcode_id": 203,
+    "title": "Remove Linked List Elements",
+    "difficulty": "Easy",
+    "primary_pattern": "Linked List",
+    "subpattern": "Dummy-head removal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Node identity",
+      "Pointer updates and null checks"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about dummy-head removal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/remove-linked-list-elements/"
+  },
+  {
+    "leetcode_id": 2,
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "primary_pattern": "Linked List",
+    "subpattern": "Digit carry propagation",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Node identity",
+      "Pointer updates and null checks"
+    ],
+    "time_complexity_target": "O(N+M)",
+    "space_complexity_target": "O(N+M)",
+    "educational_utility": "Practice reasoning about digit carry propagation and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  {
+    "leetcode_id": 226,
+    "title": "Invert Binary Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Recursive symmetry transform",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree nodes",
+      "Traversal and child results"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Practice reasoning about recursive symmetry transform and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/invert-binary-tree/"
+  },
+  {
+    "leetcode_id": 100,
+    "title": "Same Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Paired structural traversal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree nodes",
+      "Traversal and child results"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Practice reasoning about paired structural traversal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/same-tree/"
+  },
+  {
+    "leetcode_id": 101,
+    "title": "Symmetric Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Mirrored subtree comparison",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree nodes",
+      "Traversal and child results"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Practice reasoning about mirrored subtree comparison and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/symmetric-tree/"
+  },
+  {
+    "leetcode_id": 110,
+    "title": "Balanced Binary Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Postorder height balance",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree nodes",
+      "Traversal and child results"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Practice reasoning about postorder height balance and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/balanced-binary-tree/"
+  },
+  {
+    "leetcode_id": 112,
+    "title": "Path Sum",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Root-to-leaf accumulation",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree nodes",
+      "Traversal and child results"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Practice reasoning about root-to-leaf accumulation and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/path-sum/"
+  },
+  {
+    "leetcode_id": 94,
+    "title": "Binary Tree Inorder Traversal",
+    "difficulty": "Easy",
+    "primary_pattern": "Tree",
+    "subpattern": "Inorder traversal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree nodes",
+      "Traversal and child results"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(H) auxiliary",
+    "educational_utility": "Practice reasoning about inorder traversal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  {
+    "leetcode_id": 230,
+    "title": "Kth Smallest Element in a BST",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search Tree",
+    "subpattern": "Ordered rank traversal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree traversal",
+      "BST ordering invariant"
+    ],
+    "time_complexity_target": "O(H+K)",
+    "space_complexity_target": "O(H)",
+    "educational_utility": "Practice reasoning about ordered rank traversal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+  },
+  {
+    "leetcode_id": 700,
+    "title": "Search in a Binary Search Tree",
+    "difficulty": "Easy",
+    "primary_pattern": "Binary Search Tree",
+    "subpattern": "Ordered branch selection",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree traversal",
+      "BST ordering invariant"
+    ],
+    "time_complexity_target": "O(H)",
+    "space_complexity_target": "O(1) iterative",
+    "educational_utility": "Practice reasoning about ordered branch selection and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+  },
+  {
+    "leetcode_id": 701,
+    "title": "Insert into a Binary Search Tree",
+    "difficulty": "Medium",
+    "primary_pattern": "Binary Search Tree",
+    "subpattern": "Ordered insertion",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Tree traversal",
+      "BST ordering invariant"
+    ],
+    "time_complexity_target": "O(H)",
+    "space_complexity_target": "O(1) iterative",
+    "educational_utility": "Practice reasoning about ordered insertion and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+  },
+  {
+    "leetcode_id": 733,
+    "title": "Flood Fill",
+    "difficulty": "Easy",
+    "primary_pattern": "Graph",
+    "subpattern": "Flood fill",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Adjacency or grid representation",
+      "Visited state and traversal"
+    ],
+    "time_complexity_target": "O(R C)",
+    "space_complexity_target": "O(R C)",
+    "educational_utility": "Practice reasoning about flood fill and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/flood-fill/"
+  },
+  {
+    "leetcode_id": 695,
+    "title": "Max Area of Island",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Component area",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Adjacency or grid representation",
+      "Visited state and traversal"
+    ],
+    "time_complexity_target": "O(R C)",
+    "space_complexity_target": "O(R C)",
+    "educational_utility": "Practice reasoning about component area and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/max-area-of-island/"
+  },
+  {
+    "leetcode_id": 542,
+    "title": "01 Matrix",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Multi-source distance",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Adjacency or grid representation",
+      "Visited state and traversal"
+    ],
+    "time_complexity_target": "O(R C)",
+    "space_complexity_target": "O(R C)",
+    "educational_utility": "Practice reasoning about multi-source distance and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/01-matrix/"
+  },
+  {
+    "leetcode_id": 210,
+    "title": "Course Schedule II",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Topological ordering",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Adjacency or grid representation",
+      "Visited state and traversal"
+    ],
+    "time_complexity_target": "O(V+E)",
+    "space_complexity_target": "O(V+E)",
+    "educational_utility": "Practice reasoning about topological ordering and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/course-schedule-ii/"
+  },
+  {
+    "leetcode_id": 785,
+    "title": "Is Graph Bipartite?",
+    "difficulty": "Medium",
+    "primary_pattern": "Graph",
+    "subpattern": "Two-color constraints",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Adjacency or grid representation",
+      "Visited state and traversal"
+    ],
+    "time_complexity_target": "O(V+E)",
+    "space_complexity_target": "O(V)",
+    "educational_utility": "Practice reasoning about two-color constraints and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  {
+    "leetcode_id": 1971,
+    "title": "Find if Path Exists in Graph",
+    "difficulty": "Easy",
+    "primary_pattern": "Graph",
+    "subpattern": "Reachability",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Adjacency or grid representation",
+      "Visited state and traversal"
+    ],
+    "time_complexity_target": "O(V+E)",
+    "space_complexity_target": "O(V+E)",
+    "educational_utility": "Practice reasoning about reachability and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/find-if-path-exists-in-graph/"
+  },
+  {
+    "leetcode_id": 509,
+    "title": "Fibonacci Number",
+    "difficulty": "Easy",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Two-state recurrence",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about two-state recurrence and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/fibonacci-number/"
+  },
+  {
+    "leetcode_id": 746,
+    "title": "Min Cost Climbing Stairs",
+    "difficulty": "Easy",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Minimum prefix cost",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about minimum prefix cost and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/min-cost-climbing-stairs/"
+  },
+  {
+    "leetcode_id": 213,
+    "title": "House Robber II",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Circular exclusion",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about circular exclusion and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/house-robber-ii/"
+  },
+  {
+    "leetcode_id": 139,
+    "title": "Word Break",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Prefix segmentation",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(N squared K) simple DP",
+    "space_complexity_target": "O(N+dictionary)",
+    "educational_utility": "Practice reasoning about prefix segmentation and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/word-break/"
+  },
+  {
+    "leetcode_id": 416,
+    "title": "Partition Equal Subset Sum",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Subset-sum reachability",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(N S)",
+    "space_complexity_target": "O(S)",
+    "educational_utility": "Practice reasoning about subset-sum reachability and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/partition-equal-subset-sum/"
+  },
+  {
+    "leetcode_id": 63,
+    "title": "Unique Paths II",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Grid obstacles",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(R C)",
+    "space_complexity_target": "O(C)",
+    "educational_utility": "Practice reasoning about grid obstacles and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/unique-paths-ii/"
+  },
+  {
+    "leetcode_id": 152,
+    "title": "Maximum Product Subarray",
+    "difficulty": "Medium",
+    "primary_pattern": "Dynamic Programming",
+    "subpattern": "Minimum and maximum states",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "State definitions",
+      "Base cases and dependency order"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about minimum and maximum states and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/maximum-product-subarray/"
+  },
+  {
+    "leetcode_id": 55,
+    "title": "Jump Game",
+    "difficulty": "Medium",
+    "primary_pattern": "Greedy",
+    "subpattern": "Farthest reachable prefix",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Ordering choices",
+      "Exchange arguments or reachable-prefix proofs"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about farthest reachable prefix and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/jump-game/"
+  },
+  {
+    "leetcode_id": 45,
+    "title": "Jump Game II",
+    "difficulty": "Medium",
+    "primary_pattern": "Greedy",
+    "subpattern": "Reachable frontier layers",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Ordering choices",
+      "Exchange arguments or reachable-prefix proofs"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about reachable frontier layers and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/jump-game-ii/"
+  },
+  {
+    "leetcode_id": 455,
+    "title": "Assign Cookies",
+    "difficulty": "Easy",
+    "primary_pattern": "Greedy",
+    "subpattern": "Smallest sufficient resource",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Ordering choices",
+      "Exchange arguments or reachable-prefix proofs"
+    ],
+    "time_complexity_target": "O(N log N+M log M)",
+    "space_complexity_target": "O(1) auxiliary excluding sort",
+    "educational_utility": "Practice reasoning about smallest sufficient resource and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/assign-cookies/"
+  },
+  {
+    "leetcode_id": 122,
+    "title": "Best Time to Buy and Sell Stock II",
+    "difficulty": "Medium",
+    "primary_pattern": "Greedy",
+    "subpattern": "Positive successive gains",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Ordering choices",
+      "Exchange arguments or reachable-prefix proofs"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about positive successive gains and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+  },
+  {
+    "leetcode_id": 57,
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "primary_pattern": "Intervals",
+    "subpattern": "Ordered insertion and merge",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Endpoint semantics",
+      "Sorting and overlap tests"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about ordered insertion and merge and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/insert-interval/"
+  },
+  {
+    "leetcode_id": 452,
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "difficulty": "Medium",
+    "primary_pattern": "Intervals",
+    "subpattern": "End-point greedy cover",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Endpoint semantics",
+      "Sorting and overlap tests"
+    ],
+    "time_complexity_target": "O(N log N)",
+    "space_complexity_target": "O(1) auxiliary excluding sort",
+    "educational_utility": "Practice reasoning about end-point greedy cover and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/"
+  },
+  {
+    "leetcode_id": 347,
+    "title": "Top K Frequent Elements",
+    "difficulty": "Medium",
+    "primary_pattern": "Heap (Priority Queue)",
+    "subpattern": "Frequency selection",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Comparator direction",
+      "Heap push and pop"
+    ],
+    "time_complexity_target": "O(N log K)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about frequency selection and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/top-k-frequent-elements/"
+  },
+  {
+    "leetcode_id": 703,
+    "title": "Kth Largest Element in a Stream",
+    "difficulty": "Easy",
+    "primary_pattern": "Heap (Priority Queue)",
+    "subpattern": "Streaming kth largest",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Comparator direction",
+      "Heap push and pop"
+    ],
+    "time_complexity_target": "O(log K) per insertion",
+    "space_complexity_target": "O(K)",
+    "educational_utility": "Practice reasoning about streaming kth largest and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+  },
+  {
+    "leetcode_id": 973,
+    "title": "K Closest Points to Origin",
+    "difficulty": "Medium",
+    "primary_pattern": "Heap (Priority Queue)",
+    "subpattern": "Distance selection",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Comparator direction",
+      "Heap push and pop"
+    ],
+    "time_complexity_target": "O(N log K)",
+    "space_complexity_target": "O(K)",
+    "educational_utility": "Practice reasoning about distance selection and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/k-closest-points-to-origin/"
+  },
+  {
+    "leetcode_id": 46,
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "primary_pattern": "Backtracking",
+    "subpattern": "Permutation choices",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Recursion",
+      "Choice and undo invariants"
+    ],
+    "time_complexity_target": "O(N N!) including output",
+    "space_complexity_target": "O(N) auxiliary",
+    "educational_utility": "Practice reasoning about permutation choices and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/permutations/"
+  },
+  {
+    "leetcode_id": 90,
+    "title": "Subsets II",
+    "difficulty": "Medium",
+    "primary_pattern": "Backtracking",
+    "subpattern": "Duplicate-aware subsets",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Recursion",
+      "Choice and undo invariants"
+    ],
+    "time_complexity_target": "O(N 2^N) upper bound",
+    "space_complexity_target": "O(N) auxiliary",
+    "educational_utility": "Practice reasoning about duplicate-aware subsets and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/subsets-ii/"
+  },
+  {
+    "leetcode_id": 211,
+    "title": "Design Add and Search Words Data Structure",
+    "difficulty": "Medium",
+    "primary_pattern": "Trie",
+    "subpattern": "Wildcard prefix traversal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Prefix matching",
+      "Node storage and alphabet mapping"
+    ],
+    "time_complexity_target": "O(L) insert; O(A^L) worst search",
+    "space_complexity_target": "O(total stored characters)",
+    "educational_utility": "Practice reasoning about wildcard prefix traversal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+  },
+  {
+    "leetcode_id": 191,
+    "title": "Number of 1 Bits",
+    "difficulty": "Easy",
+    "primary_pattern": "Bit Manipulation",
+    "subpattern": "Set-bit counting",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Unsigned integer representation",
+      "Bitwise operators and shift bounds"
+    ],
+    "time_complexity_target": "O(B)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about set-bit counting and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/number-of-1-bits/"
+  },
+  {
+    "leetcode_id": 338,
+    "title": "Counting Bits",
+    "difficulty": "Easy",
+    "primary_pattern": "Bit Manipulation",
+    "subpattern": "Bit-count recurrence",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Unsigned integer representation",
+      "Bitwise operators and shift bounds"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(N)",
+    "educational_utility": "Practice reasoning about bit-count recurrence and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/counting-bits/"
+  },
+  {
+    "leetcode_id": 268,
+    "title": "Missing Number",
+    "difficulty": "Easy",
+    "primary_pattern": "Bit Manipulation",
+    "subpattern": "XOR missing value",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Unsigned integer representation",
+      "Bitwise operators and shift bounds"
+    ],
+    "time_complexity_target": "O(N)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about xor missing value and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/missing-number/"
+  },
+  {
+    "leetcode_id": 190,
+    "title": "Reverse Bits",
+    "difficulty": "Easy",
+    "primary_pattern": "Bit Manipulation",
+    "subpattern": "Bit reversal",
+    "secondary_patterns": [],
+    "prerequisites": [
+      "Unsigned integer representation",
+      "Bitwise operators and shift bounds"
+    ],
+    "time_complexity_target": "O(B)",
+    "space_complexity_target": "O(1)",
+    "educational_utility": "Practice reasoning about bit reversal and justify the invariant and complexity.",
+    "provenance": "curated_core",
+    "official_link": "https://leetcode.com/problems/reverse-bits/"
+  }
+]

@@ -1,0 +1,241 @@
+{
+  "model": "qwen3.5:4b",
+  "recorded_at": "2026-10-12T18:39:30.240622+00:00",
+  "scope": "Five sequential static-review/lesson samples; not a teaching reliability benchmark.",
+  "automated_schema_results": [
+    {
+      "case": "buggy_pair_review",
+      "kind": "review",
+      "identity": "lc_167",
+      "mode": "approach",
+      "structural_success": true,
+      "response": {
+        "mode": "approach",
+        "evidence": "not_executed",
+        "identified_pattern": "Opposite-Directional Two Pointers",
+        "invariant": "The left pointer moves right while the right pointer moves left, maintaining distinct indices.",
+        "estimated_time": "O(n)",
+        "estimated_space": "O(1)",
+        "observations": [
+          "Correctly handles the sorted property by adjusting pointers based on sum comparison.",
+          "Accurately converts 0-based indices to the required 1-based output format."
+        ],
+        "edge_cases": [
+          "Target equals the sum of the two smallest or largest elements in the array.",
+          "Array length is exactly 2 (minimum constraint)."
+        ],
+        "simplification": "None; the logic is already minimal and direct for this pattern.",
+        "alternatives": [],
+        "uncertainty": "Correctness relies on the input being strictly sorted as guaranteed by constraints, but execution evidence is absent.",
+        "guiding_question": "How would the pointer movement change if the array were not sorted?"
+      },
+      "seconds": 32.61,
+      "generation_attempts": [
+        {
+          "response": "{\n  \"mode\": \"approach\",\n  \"evidence\": \"not_executed\",\n  \"identified_pattern\": \"Opposite-Directional Two Pointers\",\n  \"invariant\": \"The left pointer moves right while the right pointer moves left, maintaining distinct indices.\",\n  \"estimated_time\": \"O(n)\",\n  \"estimated_space\": \"O(1)\",\n  \"observations\": [\"Correctly handles the sorted property by adjusting pointers based on sum comparison.\", \"Accurately converts 0-based indices to the required 1-based output format.\"],\n  \"edge_cases\": [\"Target equals the sum of the two smallest or largest elements in the array.\", \"Array length is exactly 2 (minimum constraint).\"],\n  \"simplification\": \"None; the logic is already minimal and direct for this pattern.\",\n  \"alternatives\": [],\n  \"uncertainty\": \"Correctness relies on the input being strictly sorted as guaranteed by constraints, but execution evidence is absent.\",\n  \"guiding_question\": \"How would the pointer movement change if the array were not sorted?\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 536,
+          "completion_tokens": 238
+        }
+      ]
+    },
+    {
+      "case": "correct_search_review",
+      "kind": "review",
+      "identity": "lc_704",
+      "mode": "approach",
+      "structural_success": true,
+      "response": {
+        "mode": "approach",
+        "evidence": "not_executed",
+        "identified_pattern": "Binary Search with standard midpoint calculation and boundary updates.",
+        "invariant": "The loop maintains that the target lies within the range [l, r] if it exists in the array.",
+        "estimated_time": "O(log n) assuming unique elements and correct boundary logic.",
+        "estimated_space": "O(1) auxiliary space.",
+        "observations": [
+          "Using l <= r is safe for finding an element but risks infinite loops if the update logic were incorrect (e.g., m = l + (r - l + 1) / 2).",
+          "The midpoint calculation l + (r - l) / 2 correctly avoids integer overflow.",
+          "Since elements are unique, nums[m] == target is a definitive success condition without needing to check neighbors."
+        ],
+        "edge_cases": [
+          "Empty array handled by initial r = -1 causing immediate exit.",
+          "Target smaller than all elements or larger than all elements returns -1 correctly.",
+          "Consecutive duplicates would require additional logic not present here (though constraints say unique)."
+        ],
+        "simplification": "The approach is already minimal; no unnecessary complexity detected.",
+        "alternatives": [],
+        "uncertainty": "Correctness cannot be fully verified without execution evidence, specifically regarding the loop termination condition for specific boundary inputs.",
+        "guiding_question": "Can you trace the state transitions when l and r become adjacent to ensure the loop terminates without infinite iteration?"
+      },
+      "seconds": 45.89,
+      "generation_attempts": [
+        {
+          "response": "{\n  \"mode\": \"approach\",\n  \"evidence\": \"not_executed\",\n  \"identified_pattern\": \"Binary Search with standard midpoint calculation and boundary updates.\",\n  \"invariant\": \"The loop maintains that the target lies within the range [l, r] if it exists in the array.\",\n  \"estimated_time\": \"O(log n) assuming unique elements and correct boundary logic.\",\n  \"estimated_space\": \"O(1) auxiliary space.\",\n  \"observations\": [\"Using l <= r is safe for finding an element but risks infinite loops if the update logic were incorrect (e.g., m = l + (r - l + 1) / 2).\", \"The midpoint calculation l + (r - l) / 2 correctly avoids integer overflow.\", \"Since elements are unique, nums[m] == target is a definitive success condition without needing to check neighbors.\"],\n  \"edge_cases\": [\"Empty array handled by initial r = -1 causing immediate exit.\", \"Target smaller than all elements or larger than all elements returns -1 correctly.\", \"Consecutive duplicates would require additional logic not present here (though constraints say unique).\"],\n  \"simplification\": \"The approach is already minimal; no unnecessary complexity detected.\",\n  \"alternatives\": [],\n  \"uncertainty\": \"Correctness cannot be fully verified without execution evidence, specifically regarding the loop termination condition for specific boundary inputs.\",\n  \"guiding_question\": \"Can you trace the state transitions when l and r become adjacent to ensure the loop terminates without infinite iteration?\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 547,
+          "completion_tokens": 333
+        }
+      ]
+    },
+    {
+      "case": "pair_alternative_comparison",
+      "kind": "review",
+      "identity": "lc_167",
+      "mode": "compare",
+      "structural_success": true,
+      "response": {
+        "mode": "compare",
+        "evidence": "not_executed",
+        "identified_pattern": "Brute-force nested iteration instead of Two Pointers",
+        "invariant": "The code assumes every pair sums to target or returns immediately, ignoring the sorted property's utility",
+        "estimated_time": "O(n^2) with O(1) space, assuming no early termination on mismatched sums",
+        "estimated_space": "O(1)",
+        "observations": [
+          "Nested loops check all pairs regardless of sum direction",
+          "Sorted order is ignored to enable faster convergence"
+        ],
+        "edge_cases": [
+          "Duplicate values at collision point",
+          "Target sum exceeding max integer range"
+        ],
+        "simplification": "Replace nested iteration with two pointers moving inward from ends",
+        "alternatives": [
+          {
+            "name": "Two Pointers (Optimal)",
+            "direction": "Move left pointer up and right pointer down based on current sum vs target",
+            "estimated_time": "O(n)",
+            "estimated_space": "O(1)",
+            "tradeoff": "Linear time vs Quadratic time; constant space maintained"
+          },
+          {
+            "name": "Binary Search",
+            "direction": "Fix one index and binary search for the complement in the remaining range",
+            "estimated_time": "O(n log n)",
+            "estimated_space": "O(1)",
+            "tradeoff": "Slightly slower time due to logarithmic factor but still optimal space"
+          }
+        ],
+        "uncertainty": "Correctness of the two-pointer logic cannot be verified without execution evidence",
+        "guiding_question": "How does the sorted property allow you to eliminate half the search space at each step?"
+      },
+      "seconds": 128.0,
+      "generation_attempts": [
+        {
+          "response": "{\n  \"mode\": \"compare\",\n  \"evidence\": \"not_executed\",\n  \"identified_pattern\": \"Brute-force nested iteration instead of the required Two Pointers approach.\",\n  \"invariant\": \"The code assumes a sorted array but ignores its structure, treating it as an unsorted list.\",\n  \"estimated_time\": \"O(n^2) due to checking every pair, which violates the O(n) expectation for sorted inputs.\",\n  \"estimated_space\": \"O(1) auxiliary space, assuming no hidden allocations.\",\n  \"observations\": [\"The nested loops check all pairs regardless of their sum, wasting time on impossible combinations.\", \"The logic correctly handles the return format but fails to leverage the sorted property for early termination.\"],\n  \"edge_cases\": [\"Duplicate values in the array (e.g., [2, 2, 3] with target 4) require distinct indices, which brute force handles but inefficiently.\", \"Large input size (30,000 elements) will cause Time Limit Exceeded with this quadratic complexity.\"],\n  \"simplification\": \"Replace nested loops with two pointers moving from opposite ends to reduce complexity to O(n).\",\n  \"alternatives\": [\n    {\n      \"name\": \"Two Pointers (Optimal)\",\n      \"direction\": \"Initialize one pointer at the start and another at the end; move them inward based on sum comparison.\",\n      \"estimated_time\": \"O(n)\",\n      \"estimated_space\": \"O(1)\",\n      \"tradeoff\": \"Sacrifices code brevity for massive performance gains on large inputs.\"\n    },\n    {\n      \"name\": \"Binary Search\",\n      \"direction\": \"For each element, binary search for the complement (target - element) in the remaining suffix.\",\n      \"estimated_time\": \"O(n log n)\",\n      \"estimated_space\": \"O(1)\",\n      \"tradeoff\": \"Maintains simplicity of logic but is slower than Two Pointers due to logarithmic overhead per element.\"\n    }\n  ],\n  \"uncertainty\": \"Correctness cannot be verified without execution because the current approach does not utilize the sorted constraint.\",\n  \"guiding_question\": \"How would you modify the loop structure so that moving one pointer forward guarantees a specific change in the sum?\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 532,
+          "completion_tokens": 510
+        },
+        {
+          "response": "{\n  \"mode\": \"compare\",\n  \"evidence\": \"not_executed\",\n  \"identified_pattern\": \"Brute-force nested iteration instead of Two Pointers\",\n  \"invariant\": \"The code assumes every pair sums to target or returns immediately, ignoring the sorted property's utility\",\n  \"estimated_time\": \"O(n^2) with O(1) space, assuming no early termination on mismatched sums\",\n  \"estimated_space\": \"O(1)\",\n  \"observations\": [\"Nested loops check all pairs regardless of sum direction\", \"Sorted order is ignored to enable faster convergence\"],\n  \"edge_cases\": [\"Duplicate values at collision point\", \"Target sum exceeding max integer range\"],\n  \"simplification\": \"Replace nested iteration with two pointers moving inward from ends\",\n  \"alternatives\": [\n    {\n      \"name\": \"Two Pointers (Optimal)\",\n      \"direction\": \"Move left pointer up and right pointer down based on current sum vs target\",\n      \"estimated_time\": \"O(n)\",\n      \"estimated_space\": \"O(1)\",\n      \"tradeoff\": \"Linear time vs Quadratic time; constant space maintained\"\n    },\n    {\n      \"name\": \"Binary Search\",\n      \"direction\": \"Fix one index and binary search for the complement in the remaining range\",\n      \"estimated_time\": \"O(n log n)\",\n      \"estimated_space\": \"O(1)\",\n      \"tradeoff\": \"Slightly slower time due to logarithmic factor but still optimal space\"\n    }\n  ],\n  \"uncertainty\": \"Correctness of the two-pointer logic cannot be verified without execution evidence\",\n  \"guiding_question\": \"How does the sorted property allow you to eliminate half the search space at each step?\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 570,
+          "completion_tokens": 401
+        }
+      ]
+    },
+    {
+      "case": "binary_boundary_followup",
+      "kind": "lesson",
+      "identity": "binary-search",
+      "mode": null,
+      "structural_success": true,
+      "response": {
+        "lesson_id": "binary-search",
+        "answer": "The lower bound can equal the array size when the target is strictly greater than all elements in the sorted range, meaning no element satisfies the condition 'less than or equal to target'. Reading that index is unsafe because it falls outside the valid bounds [0, size), causing an out-of-range access.",
+        "material_sections": [
+          "introduction",
+          "misconceptions",
+          "template"
+        ],
+        "uncertainty": "The student needs clarification on why the search space collapses to 'size' when no element matches.",
+        "guiding_question": "Consider a sorted array [1, 3, 5] and a target of 10. Trace how the `left` pointer evolves through the loop iterations until it reaches the array size, and explain what this state signifies about the existence of an element less than or equal to 10."
+      },
+      "seconds": 87.21,
+      "generation_attempts": [
+        {
+          "response": "{\n  \"lesson_id\": \"binary-search\",\n  \"answer\": \"The `lower_bound` returns the first position where the value could be inserted while maintaining order. If all elements in the sorted array are strictly smaller than your target, there is no valid index within `[0, size)` to place it; therefore, the algorithm correctly returns `size`. This is a valid *insertion position* (conceptually at the end), but it is also an *unsafe index* for direct reading because accessing `a[size]` exceeds the array bounds.\\n\\nTo verify your understanding of this boundary condition:\\nIf you are searching for a value that exists in the array, will `lower_bound` ever return an index strictly less than `size`? Explain why based on the invariant that the search space `[left, right)` always contains at least one candidate.\",\"material_sections\": [\"introduction\", \"template\", \"misconceptions\"],\n  \"uncertainty\": \"}\",\"guiding_question\": \"If you are searching for a value that exists in the array, will `lower_bound` ever return an index strictly less than `size`? Explain why based on the invariant that the search space `[left, right)` always contains at least one candidate.\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 855,
+          "completion_tokens": 263
+        },
+        {
+          "response": "{\n  \"lesson_id\": \"binary-search\",\n  \"answer\": \"The lower bound can equal the array size when the target is strictly greater than all elements in the sorted range, meaning no element satisfies the condition 'less than or equal to target'. Reading that index is unsafe because it falls outside the valid bounds [0, size), causing an out-of-range access.\",\n  \"material_sections\": [\"introduction\", \"misconceptions\", \"template\"],\n  \"uncertainty\": \"The student needs clarification on why the search space collapses to 'size' when no element matches.\",\n  \"guiding_question\": \"Consider a sorted array [1, 3, 5] and a target of 10. Trace how the `left` pointer evolves through the loop iterations until it reaches the array size, and explain what this state signifies about the existence of an element less than or equal to 10.\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 890,
+          "completion_tokens": 193
+        }
+      ]
+    },
+    {
+      "case": "window_followup",
+      "kind": "lesson",
+      "identity": "sliding-window",
+      "mode": null,
+      "structural_success": true,
+      "response": {
+        "lesson_id": "sliding-window",
+        "answer": "The core reason you must update counts when moving the left boundary is to **maintain the invariant** that your window accurately reflects the current state of the data. \n\nIn this specific pattern, the condition for a valid window (e.g., 'all characters unique') depends entirely on the frequency of elements inside the range `[left, right]`. If you only move `left` without decrementing the count of `s[left]`, the map will still believe that character is present when it has actually left the window. This causes the `while` loop to fail prematurely or incorrectly, potentially allowing duplicate characters back into the valid set.\n\nThink of it as a physical constraint: if you shrink the window by removing an item, you must account for that removal in your tracking mechanism; otherwise, your 'validity check' is based on stale data.",
+        "material_sections": [
+          "introduction",
+          "misconceptions"
+        ],
+        "uncertainty": "The student may be confusing this with fixed-width windows where counts are implicitly managed by the window size itself, or they might not fully grasp how the `while` loop relies on accurate state to decide when to stop shrinking.",
+        "guiding_question": "Consider a scenario where you have a valid window `[a, b, c]` and move the left pointer past `a`. If you do *not* decrement the count for `a`, what happens when you try to add the next character `a` again? How does the loop logic break?"
+      },
+      "seconds": 55.23,
+      "generation_attempts": [
+        {
+          "response": "{\n  \"lesson_id\": \"sliding-window\",\n  \"answer\": \"The core reason you must update counts when moving the left boundary is to **maintain the invariant** that your window accurately reflects the current state of the data. \\n\\nIn this specific pattern, the condition for a valid window (e.g., 'all characters unique') depends entirely on the frequency of elements inside the range `[left, right]`. If you only move `left` without decrementing the count of `s[left]`, the map will still believe that character is present when it has actually left the window. This causes the `while` loop to fail prematurely or incorrectly, potentially allowing duplicate characters back into the valid set.\\n\\nThink of it as a physical constraint: if you shrink the window by removing an item, you must account for that removal in your tracking mechanism; otherwise, your 'validity check' is based on stale data.\",\n  \"material_sections\": [\"introduction\", \"misconceptions\"],\n  \"uncertainty\": \"The student may be confusing this with fixed-width windows where counts are implicitly managed by the window size itself, or they might not fully grasp how the `while` loop relies on accurate state to decide when to stop shrinking.\",\n  \"guiding_question\": \"Consider a scenario where you have a valid window `[a, b, c]` and move the left pointer past `a`. If you do *not* decrement the count for `a`, what happens when you try to add the next character `a` again? How does the loop logic break?\"\n}",
+          "done": true,
+          "done_reason": "stop",
+          "prompt_tokens": 815,
+          "completion_tokens": 331
+        }
+      ]
+    }
+  ],
+  "subjective_quality_review": [
+    {
+      "case": "buggy_pair_review",
+      "factual_correctness": 0,
+      "teaching_usefulness": 0,
+      "notes": "Missed unconditional simultaneous pointer movement and falsely asserted updates depend on sum. Also called non-decreasing input strictly sorted."
+    },
+    {
+      "case": "correct_search_review",
+      "factual_correctness": 1,
+      "teaching_usefulness": 1,
+      "notes": "Core invariant and complexity correct. Adds misleading hypothetical midpoint/infinite-loop concern and claims duplicates need extra logic, although ordinary search can find any matching duplicate."
+    },
+    {
+      "case": "pair_alternative_comparison",
+      "factual_correctness": 1,
+      "teaching_usefulness": 1,
+      "notes": "Useful O(N\u00b2), O(N), O(N log N) comparisons. Misstates brute-force invariant and asks about halving each step, which is not the two-pointer elimination guarantee."
+    },
+    {
+      "case": "binary_boundary_followup",
+      "factual_correctness": 0,
+      "teaching_usefulness": 1,
+      "notes": "Correctly warns against indexing size, but reverses the lower-bound predicate: first >= target, not <= target. The guiding question repeats the incorrect comparison."
+    },
+    {
+      "case": "window_followup",
+      "factual_correctness": 1,
+      "teaching_usefulness": 1,
+      "notes": "Correct stale-frequency intuition and concrete question. Wrongly implies fixed windows manage counts by size and describes premature exit rather than possible endless shrinking/out-of-bounds behavior."
+    }
+  ],
+  "subjective_review_method": "Codex manual reading against supplied source and authored material; no human raters. 0=incorrect/unhelpful, 1=mixed, 2=accurate/useful. Factual correctness and teaching usefulness scored separately; five samples are not a reliability benchmark.",
+  "subjective_averages": {
+    "factual_correctness_out_of_2": 0.6,
+    "teaching_usefulness_out_of_2": 0.8
+  }
+}

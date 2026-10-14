@@ -1,0 +1,187 @@
+{
+  "model": "qwen3.5:4b",
+  "results": [
+    {
+      "problem_id": "lc_167",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "canonical_verdict": "AC",
+      "buggy_verdict": "WA",
+      "hints": {
+        "1": {
+          "response": {
+            "level": 1,
+            "title": "Leverage Input Properties",
+            "guidance": "Since the array is sorted, you can avoid checking every pair by adjusting your search strategy based on the current sum relative to the target. Consider how the order of elements allows you to eliminate candidates without a full scan.",
+            "code": null,
+            "pseudocode": null,
+            "explanation": null,
+            "time_complexity": null,
+            "space_complexity": null,
+            "guiding_question": "If you pick two numbers and their sum is less than the target, what must be true about any number larger than the second one you picked?",
+            "contains_code": false
+          },
+          "output_sha256": "7d066d2f5a2808bb4c8520b00379ca67e8256386c6cde051136b789101ea9e2c",
+          "schema_compliant": true,
+          "quality_status": "reviewed",
+          "requested_level_matches": true,
+          "obvious_code_leakage": false,
+          "generated_code_verified": null,
+          "quality_review": {
+            "reviewer": "Codex source-and-output inspection",
+            "reviewer_kind": "ai",
+            "factual_correctness": 1,
+            "teaching_usefulness": 1,
+            "evidence": "Sorted-order observation is valid, but the guiding question is ambiguous: a larger second value need not reach the target. This review does not establish zero semantic leakage."
+          }
+        },
+        "2": {
+          "response": {
+            "level": 2,
+            "title": "Identifying the Pattern",
+            "guidance": "The sorted order and requirement for a specific sum signal the Two Pointers pattern with an Opposite-Directional subpattern. This structure allows you to explore pairs by moving from the extremes toward the center.",
+            "code": null,
+            "pseudocode": null,
+            "explanation": null,
+            "time_complexity": null,
+            "space_complexity": null,
+            "guiding_question": "Which input properties make this opposite-directional approach suitable?",
+            "contains_code": false
+          },
+          "output_sha256": "11a0dc981fa8c3b13e7493d843080285457a52595146fa19fca40db9a0b5889c",
+          "schema_compliant": true,
+          "quality_review": {
+            "reviewer": "Codex source-and-output inspection",
+            "reviewer_kind": "ai",
+            "factual_correctness": 2,
+            "teaching_usefulness": 2,
+            "evidence": "Names the opposite-directional pattern and connects it to sorted pair sums without giving the conditional update rules. The question asks why the pattern fits."
+          },
+          "quality_status": "reviewed",
+          "requested_level_matches": true,
+          "obvious_code_leakage": false,
+          "generated_code_verified": null,
+          "latency_seconds": 13.96
+        },
+        "3": {
+          "response": {
+            "level": 3,
+            "title": "Algorithmic Strategy",
+            "guidance": "1. Initialize two pointers: one at the start of the array (left) and one at the end (right). \n2. Calculate the sum of the elements pointed to by left and right. Compare this sum with the target value.\n3. If the sum equals the target, return the 1-based indices of these two elements. If the sum is less than the target, increment the left pointer to increase the sum (since the array is sorted). If the sum is greater than the target, decrement the right pointer to decrease the sum.\n4. Repeat step 2 until the pointers cross each other.",
+            "code": null,
+            "pseudocode": null,
+            "explanation": null,
+            "time_complexity": null,
+            "space_complexity": null,
+            "guiding_question": "Consider a scenario where multiple pairs of numbers exist that sum up to the target; how does your strategy ensure you find *any* valid pair without getting stuck in an infinite loop?",
+            "contains_code": false
+          },
+          "output_sha256": "eef681f4133ef775390c2d221203d51d6b1cd725337b4a5b7c797ebc0b65357c",
+          "schema_compliant": true,
+          "quality_status": "reviewed",
+          "requested_level_matches": true,
+          "obvious_code_leakage": false,
+          "generated_code_verified": null,
+          "quality_review": {
+            "reviewer": "Codex source-and-output inspection",
+            "reviewer_kind": "ai",
+            "factual_correctness": 1,
+            "teaching_usefulness": 1,
+            "evidence": "Pointer movement direction and one-based indexing are correct. Termination wording says until pointers cross, which can suggest using the same index at equality; the precise requirement is left < right. The multiple-pair question also does not match the guaranteed-unique-pair specification."
+          }
+        },
+        "4": {
+          "response": {
+            "level": 4,
+            "title": "Structured Pseudocode",
+            "guidance": "This pseudocode outlines the Two-Pointer approach, which is optimal for sorted arrays. It leverages the sorted property to eliminate the need for a hash set, reducing space complexity while maintaining O(n) time complexity.",
+            "code": null,
+            "pseudocode": "FUNCTION twoSum(numbers, target):\n    // Initialize pointers: left at start, right at end\n    left = 0\n    right = length(numbers) - 1\n    \n    WHILE left < right:\n        // Calculate current sum (using 0-based index for calculation)\n        current_sum = numbers[left] + numbers[right]\n        \n        IF current_sum == target:\n            // Found the pair; convert to 1-based indexing and return immediately\n            RETURN [left + 1, right + 1]\n        ELSE IF current_sum < target:\n            // Sum is too small; need larger values. Move left pointer forward.\n            left = left + 1\n        ELSE:\n            // Sum is too large; need smaller values. Move right pointer backward.\n            right = right - 1\n    \n    // If loop completes without returning, no solution exists (though problem guarantees one)\n    RETURN []",
+            "explanation": null,
+            "time_complexity": null,
+            "space_complexity": null,
+            "guiding_question": null,
+            "contains_code": true
+          },
+          "output_sha256": "e93c43f2f89ee8f03d10a18d555091e5b7c1ff432e23c112b283c4757426b812",
+          "schema_compliant": true,
+          "quality_review": {
+            "reviewer": "Codex source-and-output inspection",
+            "reviewer_kind": "ai",
+            "factual_correctness": 2,
+            "teaching_usefulness": 2,
+            "evidence": "Pseudocode explicitly uses left < right, handles both sum directions and equality, and returns one-based indices. The algorithm is consistent with the reviewed fixed problem."
+          },
+          "quality_status": "reviewed",
+          "requested_level_matches": true,
+          "obvious_code_leakage": false,
+          "generated_code_verified": null,
+          "latency_seconds": 42.82
+        },
+        "5": {
+          "response": {
+            "level": 5,
+            "title": "Complete C++ Solution & Complexity Analysis",
+            "guidance": "Use a two-pointer approach on the sorted array to find the pair in O(n) time.",
+            "code": "vector<int> twoSum(vector<int>& numbers, int target) {\n    int left = 0;\n    int right = numbers.size() - 1;\n    \n    while (left < right) {\n        int sum = numbers[left] + numbers[right];\n        if (sum == target) {\n            return {left + 1, right + 1}; // Return 1-based indices\n        } else if (sum < target) {\n            left++;\n        } else {\n            right--;\n        }\n    }\n    return {}; // Should not reach here given problem constraints\n}",
+            "pseudocode": null,
+            "explanation": "The invariant is that the sum of elements at `left` and `right` pointers determines the direction of movement: if the sum is less than target, we must increase the sum by moving left forward; if greater, we decrease it by moving right backward. Since the array is sorted, this greedy strategy guarantees finding the solution in linear time.",
+            "time_complexity": "O(n) because each element is visited at most once as either left or right pointer moves monotonically toward the center.",
+            "space_complexity": "O(1) auxiliary space as only two integer variables (left, right) are used regardless of input size.",
+            "guiding_question": null,
+            "contains_code": true
+          },
+          "output_sha256": "b6309e1800bea462cdcb93764e76370d959664891548fb65fc61b8defb491e69",
+          "schema_compliant": true,
+          "quality_review": {
+            "reviewer": "Codex source-and-output inspection",
+            "reviewer_kind": "ai",
+            "factual_correctness": 1,
+            "teaching_usefulness": 1,
+            "evidence": "The function and Big-O orders align with the canonical two-pointer approach by inspection. The explanation calls a decision rule an invariant and says each element is visited at most once, although a stationary endpoint can be reused. Generated code was not executed."
+          },
+          "quality_status": "reviewed",
+          "requested_level_matches": true,
+          "obvious_code_leakage": false,
+          "generated_code_verified": false,
+          "latency_seconds": 44.32
+        }
+      },
+      "diagnosis": {
+        "response": {
+          "category": "state_transition",
+          "misconception_summary": "The student incorrectly assumes that when the sum exceeds the target, increasing the left pointer is necessary; however, in a sorted array, increasing the left pointer only increases the sum further, violating the invariant needed to find a solution.",
+          "guiding_question": "If the current sum is greater than the target, which direction should we move the pointers to decrease the sum and potentially find a pair?",
+          "suggested_focus_area": "The logic block inside the `else if (sum > target)` condition"
+        },
+        "output_sha256": "9799b4fc5a216cf19a88e2c41c789c4c349e7203c496e152510fbd6a3c5112d5",
+        "schema_compliant": true,
+        "quality_status": "reviewed",
+        "category_matches_expected": true,
+        "expected_category": "state_transition",
+        "obvious_code_leakage": false,
+        "quality_review": {
+          "reviewer": "Codex source-and-output inspection",
+          "reviewer_kind": "ai",
+          "factual_correctness": 1,
+          "teaching_usefulness": 2,
+          "evidence": "Identifies the wrong movement when sum exceeds target and asks a targeted directional question. Focus names an else-if branch absent from the actual buggy code (it uses else); strictly increasing sum also ignores equal adjacent values."
+        }
+      }
+    }
+  ],
+  "summary": {
+    "problems": 1,
+    "hint_outputs": 5,
+    "schema_valid_hints": 5,
+    "category_matches": 1,
+    "diagnoses_attempted": 1,
+    "heuristic_leak_flags": 0,
+    "reviewed_outputs": 6,
+    "human_reviewed_outputs": 0,
+    "ai_reviewed_outputs": 6,
+    "mean_factual_correctness": 1.3333333333333333,
+    "mean_teaching_usefulness": 1.5,
+    "limitations": "Schema compliance, category matching, and regex checks do not establish educational correctness. Unreviewed outputs have no quality score. Generated code has not been judged."
+  },
+  "review_scope": "Six outputs for one fixed problem; subjective AI inspection, not human assessment or learning-outcome validation. Scores 0=incorrect/unhelpful, 1=partial/minor issues, 2=correct/useful for the reviewed sample."
+}

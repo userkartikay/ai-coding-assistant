@@ -1,0 +1,9 @@
+"""Provider-neutral tutoring contract; no orchestration framework."""
+from typing import Protocol
+from backend.core.schemas import ProgressiveHintResponse, MistakeDiagnosisResponse
+
+
+class Tutor(Protocol):
+    async def check_health(self) -> bool: ...
+    async def get_progressive_hint(self, **kwargs) -> ProgressiveHintResponse: ...
+    async def diagnose_mistake(self, **kwargs) -> MistakeDiagnosisResponse: ...

@@ -1,0 +1,6 @@
+# Existing backend dependencies plus the thin local API adapter.
+fastapi==0.141.1
+uvicorn==0.52.4
+httpx==0.28.1
+pydantic==2.13.5
+psutil==7.0.0

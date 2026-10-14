@@ -1,0 +1,1415 @@
+{
+  "recorded_at": "2026-10-12T17:20:40.020089+00:00",
+  "problems": {
+    "lc_167": {
+      "fingerprint": "51b4cc2dbf697b967256ecc3feba99de8b80689ab9c519c159b8c1adda78bca3",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1208.0892000012682,
+          "test_results": [
+            {
+              "test_case_id": "ts2_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1 2",
+              "expected_output": "1 2",
+              "input_data": "4\n2 7 11 15\n9\n",
+              "execution_time_ms": 160.49710000152118,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts2_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "2 3",
+              "expected_output": "2 3",
+              "input_data": "4\n2 7 11 15\n18\n",
+              "execution_time_ms": 75.74019999810844,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts2_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1 3",
+              "expected_output": "1 3",
+              "input_data": "3\n2 3 4\n6\n",
+              "execution_time_ms": 78.22989999840502,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts_negative_pair",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1 2",
+              "expected_output": "1 2",
+              "input_data": "2\n-3 -1\n-4\n",
+              "execution_time_ms": 80.14929999990272,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "29999 30000",
+              "expected_output": "29999 30000",
+              "input_data": "30000\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 \n[Display excerpt]",
+              "execution_time_ms": 106.80259999935515,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 5,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1146.8853000005765,
+          "test_results": [
+            {
+              "test_case_id": "ts2_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "NOT_FOUND",
+              "expected_output": "1 2",
+              "input_data": "4\n2 7 11 15\n9\n",
+              "execution_time_ms": 235.98610000044573,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts2_2",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "NOT_FOUND",
+              "expected_output": "2 3",
+              "input_data": "4\n2 7 11 15\n18\n",
+              "execution_time_ms": 82.66180000282475,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts2_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1 3",
+              "expected_output": "1 3",
+              "input_data": "3\n2 3 4\n6\n",
+              "execution_time_ms": 77.99019999947632,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts_negative_pair",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1 2",
+              "expected_output": "1 2",
+              "input_data": "2\n-3 -1\n-4\n",
+              "execution_time_ms": 85.47980000003008,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ts_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "29999 30000",
+              "expected_output": "29999 30000",
+              "input_data": "30000\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 \n[Display excerpt]",
+              "execution_time_ms": 120.34990000029211,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 3,
+          "failing_evidence": "FAILED TEST CASE: ts2_1\nInput: 4\n2 7 11 15\n9\nExpected Output: 1 2\nActual Output: NOT_FOUND\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_125": {
+      "fingerprint": "8c560fd5cc35771ee164325784a18a155981018f72311e75c22b21a2223df21a",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1002.635900000314,
+          "test_results": [
+            {
+              "test_case_id": "vp_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": "A man, a plan, a canal: Panama\n",
+              "execution_time_ms": 201.0684000015317,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "false",
+              "expected_output": "false",
+              "input_data": "race a car\n",
+              "execution_time_ms": 86.58940000168514,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": " \n",
+              "execution_time_ms": 82.09379999971134,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": "a\n",
+              "execution_time_ms": 82.61330000095768,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[Display excerpt]",
+              "execution_time_ms": 199.5829000006779,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 5,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 958.3124999990105,
+          "test_results": [
+            {
+              "test_case_id": "vp_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "false",
+              "expected_output": "true",
+              "input_data": "A man, a plan, a canal: Panama\n",
+              "execution_time_ms": 195.4269000016211,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "false",
+              "expected_output": "false",
+              "input_data": "race a car\n",
+              "execution_time_ms": 84.62239999789745,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": " \n",
+              "execution_time_ms": 98.49119999853428,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": "a\n",
+              "execution_time_ms": 94.96630000285222,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "vp_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "true",
+              "expected_output": "true",
+              "input_data": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[Display excerpt]",
+              "execution_time_ms": 150.2400999997917,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 4,
+          "failing_evidence": "FAILED TEST CASE: vp_1\nInput: A man, a plan, a canal: Panama\nExpected Output: true\nActual Output: false\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_53": {
+      "fingerprint": "60d5cb96cec7b67239885896d1a0498c64840a16ff5a83359bd6a2016df34ceb",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1011.3311999994039,
+          "test_results": [
+            {
+              "test_case_id": "ms_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "6",
+              "expected_output": "6",
+              "input_data": "9\n-2 1 -3 4 -1 2 1 -5 4\n",
+              "execution_time_ms": 190.95860000015819,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1\n1\n",
+              "execution_time_ms": 92.10410000014235,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "3\n-3 -2 -1\n",
+              "execution_time_ms": 85.61719999852357,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_single_negative",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-10000",
+              "expected_output": "-10000",
+              "input_data": "1\n-10000\n",
+              "execution_time_ms": 98.23740000138059,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1000000000",
+              "expected_output": "1000000000",
+              "input_data": "100000\n10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000\n[Display excerpt]",
+              "execution_time_ms": 378.36070000048494,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 5,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1123.8920000032522,
+          "test_results": [
+            {
+              "test_case_id": "ms_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "6",
+              "expected_output": "6",
+              "input_data": "9\n-2 1 -3 4 -1 2 1 -5 4\n",
+              "execution_time_ms": 155.450700000074,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1\n1\n",
+              "execution_time_ms": 80.81400000082795,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_3",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "0",
+              "expected_output": "-1",
+              "input_data": "3\n-3 -2 -1\n",
+              "execution_time_ms": 84.00479999909294,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_single_negative",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "0",
+              "expected_output": "-10000",
+              "input_data": "1\n-10000\n",
+              "execution_time_ms": 85.13189999939641,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ms_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1000000000",
+              "expected_output": "1000000000",
+              "input_data": "100000\n10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000\n[Display excerpt]",
+              "execution_time_ms": 374.2820000006759,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 3,
+          "failing_evidence": "FAILED TEST CASE: ms_3\nInput: 3\n-3 -2 -1\nExpected Output: -1\nActual Output: 0\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_704": {
+      "fingerprint": "1294c3375600869c41d22ffd0724e4215f2fb1605f4a378c8a62456e414e1acb",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1053.4318999998504,
+          "test_results": [
+            {
+              "test_case_id": "bs_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "4",
+              "expected_output": "4",
+              "input_data": "6\n-1 0 3 5 9 12\n9\n",
+              "execution_time_ms": 161.27740000229096,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "6\n-1 0 3 5 9 12\n2\n",
+              "execution_time_ms": 75.69740000326419,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "1\n5\n5\n",
+              "execution_time_ms": 78.01020000260905,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_single_absent",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "1\n5\n4\n",
+              "execution_time_ms": 80.71720000225469,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "9999",
+              "expected_output": "9999",
+              "input_data": "10000\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 \n[Display excerpt]",
+              "execution_time_ms": 115.42829999962123,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 5,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1122.6196999996318,
+          "test_results": [
+            {
+              "test_case_id": "bs_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "4",
+              "expected_output": "4",
+              "input_data": "6\n-1 0 3 5 9 12\n9\n",
+              "execution_time_ms": 217.3292000006768,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "6\n-1 0 3 5 9 12\n2\n",
+              "execution_time_ms": 82.7160000008007,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_3",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "-1",
+              "expected_output": "0",
+              "input_data": "1\n5\n5\n",
+              "execution_time_ms": 93.36160000020755,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_single_absent",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "1\n5\n4\n",
+              "execution_time_ms": 88.47310000055586,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "bs_max",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "-1",
+              "expected_output": "9999",
+              "input_data": "10000\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 \n[Display excerpt]",
+              "execution_time_ms": 84.72330000222428,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 3,
+          "failing_evidence": "FAILED TEST CASE: bs_3\nInput: 1\n5\n5\nExpected Output: 0\nActual Output: -1\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_121": {
+      "fingerprint": "d0e70b217e1e25e172f398da87129ad63f72eaff5a3875a1ebcd758ce36c39df",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1153.7138999992749,
+          "test_results": [
+            {
+              "test_case_id": "st_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "5",
+              "expected_output": "5",
+              "input_data": "6\n7 1 5 3 6 4\n",
+              "execution_time_ms": 175.91690000335802,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "st_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "5\n7 6 4 3 1\n",
+              "execution_time_ms": 89.4001999986358,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stock_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "1\n5\n",
+              "execution_time_ms": 87.82900000005611,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stock_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "10000",
+              "expected_output": "10000",
+              "input_data": "100000\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n[Display excerpt]",
+              "execution_time_ms": 226.5826000002562,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 4,
+          "passed_tests": 4,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1114.900000000489,
+          "test_results": [
+            {
+              "test_case_id": "st_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "6",
+              "expected_output": "5",
+              "input_data": "6\n7 1 5 3 6 4\n",
+              "execution_time_ms": 182.12800000037532,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "st_2",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "6",
+              "expected_output": "0",
+              "input_data": "5\n7 6 4 3 1\n",
+              "execution_time_ms": 62.89100000140024,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stock_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "1\n5\n",
+              "execution_time_ms": 198.8238999983878,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stock_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "10000",
+              "expected_output": "10000",
+              "input_data": "100000\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n[Display excerpt]",
+              "execution_time_ms": 242.93519999991986,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 4,
+          "passed_tests": 2,
+          "failing_evidence": "FAILED TEST CASE: st_1\nInput: 6\n7 1 5 3 6 4\nExpected Output: 5\nActual Output: 6\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_104": {
+      "fingerprint": "a1c9a39d0a5601ac6b00d2b41f209744fabdd4c76e209f3db9039885f9994b89",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1507.8100000027916,
+          "test_results": [
+            {
+              "test_case_id": "md_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "3 9 20 null null 15 7\n",
+              "execution_time_ms": 195.46429999900283,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "md_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "2",
+              "expected_output": "2",
+              "input_data": "1 null 2\n",
+              "execution_time_ms": 80.11410000108299,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "md_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "null\n",
+              "execution_time_ms": 81.21539999774541,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "tree_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1\n",
+              "execution_time_ms": 78.34279999951832,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "tree_max_skew",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "10000",
+              "expected_output": "10000",
+              "input_data": "1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 n\n[Display excerpt]",
+              "execution_time_ms": 175.91339999853517,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 5,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1518.9380000010715,
+          "test_results": [
+            {
+              "test_case_id": "md_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "0",
+              "expected_output": "3",
+              "input_data": "3 9 20 null null 15 7\n",
+              "execution_time_ms": 191.371099997923,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "md_2",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "0",
+              "expected_output": "2",
+              "input_data": "1 null 2\n",
+              "execution_time_ms": 87.1700999996392,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "md_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "null\n",
+              "execution_time_ms": 88.15250000043306,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "tree_single",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "0",
+              "expected_output": "1",
+              "input_data": "1\n",
+              "execution_time_ms": 88.53159999853233,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "tree_max_skew",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "0",
+              "expected_output": "10000",
+              "input_data": "1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 null 1 n\n[Display excerpt]",
+              "execution_time_ms": 129.9655000002531,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 1,
+          "failing_evidence": "FAILED TEST CASE: md_1\nInput: 3 9 20 null null 15 7\nExpected Output: 3\nActual Output: 0\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_200": {
+      "fingerprint": "b003d6573688f162c104040cf5defe238289ea4c6dac224a28eef7df1f1db366",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1303.3480000012787,
+          "test_results": [
+            {
+              "test_case_id": "ni_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "4 5\n1 1 1 1 0\n1 1 0 1 0\n1 1 0 0 0\n0 0 0 0 0\n",
+              "execution_time_ms": 199.67689999975846,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ni_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "4 5\n1 1 0 0 0\n1 1 0 0 0\n0 0 1 0 0\n0 0 0 1 1\n",
+              "execution_time_ms": 79.63480000034906,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "island_water",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "1 1\n0\n",
+              "execution_time_ms": 82.7028000021528,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "island_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1 1\n1\n",
+              "execution_time_ms": 84.70579999993788,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "island_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "300 300\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[Display excerpt]",
+              "execution_time_ms": 152.33100000114064,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            },
+            {
+              "test_case_id": "island_diagonal",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "2",
+              "expected_output": "2",
+              "input_data": "2 2\n1 0\n0 1\n",
+              "execution_time_ms": 79.04899999994086,
+              "error_message": null,
+              "truncated_fields": []
+            }
+          ],
+          "total_tests": 6,
+          "passed_tests": 6,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1088.0781000014395,
+          "test_results": [
+            {
+              "test_case_id": "ni_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "9",
+              "expected_output": "1",
+              "input_data": "4 5\n1 1 1 1 0\n1 1 0 1 0\n1 1 0 0 0\n0 0 0 0 0\n",
+              "execution_time_ms": 185.64530000003288,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ni_2",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "7",
+              "expected_output": "3",
+              "input_data": "4 5\n1 1 0 0 0\n1 1 0 0 0\n0 0 1 0 0\n0 0 0 1 1\n",
+              "execution_time_ms": 82.71329999843147,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "island_water",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "1 1\n0\n",
+              "execution_time_ms": 84.06140000079176,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "island_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1 1\n1\n",
+              "execution_time_ms": 86.68150000085006,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "island_max",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "90000",
+              "expected_output": "1",
+              "input_data": "300 300\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[Display excerpt]",
+              "execution_time_ms": 155.99270000166143,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            },
+            {
+              "test_case_id": "island_diagonal",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "2",
+              "expected_output": "2",
+              "input_data": "2 2\n1 0\n0 1\n",
+              "execution_time_ms": 85.14180000202032,
+              "error_message": null,
+              "truncated_fields": []
+            }
+          ],
+          "total_tests": 6,
+          "passed_tests": 3,
+          "failing_evidence": "FAILED TEST CASE: ni_1\nInput: 4 5\n1 1 1 1 0\n1 1 0 1 0\n1 1 0 0 0\n0 0 0 0 0\nExpected Output: 1\nActual Output: 9\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_70": {
+      "fingerprint": "b1efc5f9da734863c39439fa058c0badbd430c8db07966ba45ce6f8d56d4f9a4",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 862.0816000002378,
+          "test_results": [
+            {
+              "test_case_id": "cs_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "2",
+              "expected_output": "2",
+              "input_data": "2\n",
+              "execution_time_ms": 283.18769999896176,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "cs_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "3\n",
+              "execution_time_ms": 75.71010000174283,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "cs_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "5",
+              "expected_output": "5",
+              "input_data": "4\n",
+              "execution_time_ms": 78.35010000053444,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stairs_one",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1\n",
+              "execution_time_ms": 77.40499999999884,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stairs_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1836311903",
+              "expected_output": "1836311903",
+              "input_data": "45\n",
+              "execution_time_ms": 78.27560000077938,
+              "error_message": null,
+              "truncated_fields": []
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 5,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 851.9992000001366,
+          "test_results": [
+            {
+              "test_case_id": "cs_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "1",
+              "expected_output": "2",
+              "input_data": "2\n",
+              "execution_time_ms": 161.66270000030636,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "cs_2",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "2",
+              "expected_output": "3",
+              "input_data": "3\n",
+              "execution_time_ms": 73.74949999939417,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "cs_3",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "3",
+              "expected_output": "5",
+              "input_data": "4\n",
+              "execution_time_ms": 77.78809999945224,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stairs_one",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "1\n",
+              "execution_time_ms": 76.70370000050752,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "stairs_max",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "1134903170",
+              "expected_output": "1836311903",
+              "input_data": "45\n",
+              "execution_time_ms": 72.71590000163997,
+              "error_message": null,
+              "truncated_fields": []
+            }
+          ],
+          "total_tests": 5,
+          "passed_tests": 1,
+          "failing_evidence": "FAILED TEST CASE: cs_1\nInput: 2\nExpected Output: 2\nActual Output: 1\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_3": {
+      "fingerprint": "e749f48781973583b07f5c992cb979a9e5c4c4e3ae62417a898c95ef218f9b6f",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 970.4076999987592,
+          "test_results": [
+            {
+              "test_case_id": "ls_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "abcabcbb\n",
+              "execution_time_ms": 169.5624999993015,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ls_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "bbbbb\n",
+              "execution_time_ms": 79.96730000013486,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ls_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "pwwkew\n",
+              "execution_time_ms": 82.65779999783263,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ls_4",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "dvdf\n",
+              "execution_time_ms": 77.63039999917964,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "substring_empty",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "\n",
+              "execution_time_ms": 78.97489999959362,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "substring_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[Display excerpt]",
+              "execution_time_ms": 75.36540000000969,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 6,
+          "passed_tests": 6,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 932.8266000011354,
+          "test_results": [
+            {
+              "test_case_id": "ls_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "abcabcbb\n",
+              "execution_time_ms": 169.15329999756068,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ls_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "bbbbb\n",
+              "execution_time_ms": 76.73589999831165,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ls_3",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3",
+              "expected_output": "3",
+              "input_data": "pwwkew\n",
+              "execution_time_ms": 73.66439999896102,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "ls_4",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "2",
+              "expected_output": "3",
+              "input_data": "dvdf\n",
+              "execution_time_ms": 81.9761999991897,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "substring_empty",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "0",
+              "expected_output": "0",
+              "input_data": "\n",
+              "execution_time_ms": 79.65949999925215,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "substring_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1",
+              "expected_output": "1",
+              "input_data": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[Display excerpt]",
+              "execution_time_ms": 74.10410000011325,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data"
+              ]
+            }
+          ],
+          "total_tests": 6,
+          "passed_tests": 5,
+          "failing_evidence": "FAILED TEST CASE: ls_4\nInput: dvdf\nExpected Output: 3\nActual Output: 2\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    },
+    "lc_496": {
+      "fingerprint": "5602edae1203e3ba5609b0e9a42f1e1a5e20fa5e2eb9719a7eeece50410a0efa",
+      "reports": {
+        "canonical": {
+          "overall_verdict": "AC",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1337.1169999991253,
+          "test_results": [
+            {
+              "test_case_id": "nge_1",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1 3 -1",
+              "expected_output": "-1 3 -1",
+              "input_data": "3\n4 1 2\n4\n1 3 4 2\n",
+              "execution_time_ms": 173.1604000015068,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "nge_2",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "3 -1",
+              "expected_output": "3 -1",
+              "input_data": "2\n2 4\n4\n1 2 3 4\n",
+              "execution_time_ms": 74.36909999887575,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "nge_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "1\n1\n1\n1\n",
+              "execution_time_ms": 78.80189999923459,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "nge_max",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 \n[Display excerpt]",
+              "expected_output": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 \n[Display excerpt]",
+              "input_data": "1000\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 3\n[Display excerpt]",
+              "execution_time_ms": 77.18380000005709,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data",
+                "actual_output",
+                "expected_output"
+              ]
+            }
+          ],
+          "total_tests": 4,
+          "passed_tests": 4,
+          "failing_evidence": null
+        },
+        "known_bug": {
+          "overall_verdict": "WA",
+          "compilation_success": true,
+          "compilation_output": "",
+          "compilation_time_ms": 1320.1129999979457,
+          "test_results": [
+            {
+              "test_case_id": "nge_1",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "2 -1 -1",
+              "expected_output": "-1 3 -1",
+              "input_data": "3\n4 1 2\n4\n1 3 4 2\n",
+              "execution_time_ms": 164.4640000013169,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "nge_2",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "-1 -1",
+              "expected_output": "3 -1",
+              "input_data": "2\n2 4\n4\n1 2 3 4\n",
+              "execution_time_ms": 79.2129000001296,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "nge_single",
+              "passed": true,
+              "verdict": "AC",
+              "actual_output": "-1",
+              "expected_output": "-1",
+              "input_data": "1\n1\n1\n1\n",
+              "execution_time_ms": 80.22780000101193,
+              "error_message": null,
+              "truncated_fields": []
+            },
+            {
+              "test_case_id": "nge_max",
+              "passed": false,
+              "verdict": "WA",
+              "actual_output": "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 \n[Display excerpt]",
+              "expected_output": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 \n[Display excerpt]",
+              "input_data": "1000\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 3\n[Display excerpt]",
+              "execution_time_ms": 72.86709999971208,
+              "error_message": null,
+              "truncated_fields": [
+                "input_data",
+                "actual_output",
+                "expected_output"
+              ]
+            }
+          ],
+          "total_tests": 4,
+          "passed_tests": 1,
+          "failing_evidence": "FAILED TEST CASE: nge_1\nInput: 3\n4 1 2\n4\n1 3 4 2\nExpected Output: -1 3 -1\nActual Output: 2 -1 -1\nVerdict: Wrong Answer (WA)\n"
+        }
+      }
+    }
+  }
+}

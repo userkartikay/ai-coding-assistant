@@ -1,0 +1,4 @@
+# Test dependencies in addition to the pinned application runtime.
+-r requirements-web.txt
+pytest==9.1.1
+pytest-asyncio==1.4.0

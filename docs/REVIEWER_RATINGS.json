@@ -1,0 +1,44 @@
+{
+  "7d066d2f5a2808bb4c8520b00379ca67e8256386c6cde051136b789101ea9e2c": {
+    "reviewer": "Codex source-and-output inspection",
+    "reviewer_kind": "ai",
+    "factual_correctness": 1,
+    "teaching_usefulness": 1,
+    "evidence": "Sorted-order observation is valid, but the guiding question is ambiguous: a larger second value need not reach the target. This review does not establish zero semantic leakage."
+  },
+  "11a0dc981fa8c3b13e7493d843080285457a52595146fa19fca40db9a0b5889c": {
+    "reviewer": "Codex source-and-output inspection",
+    "reviewer_kind": "ai",
+    "factual_correctness": 2,
+    "teaching_usefulness": 2,
+    "evidence": "Names the opposite-directional pattern and connects it to sorted pair sums without giving the conditional update rules. The question asks why the pattern fits."
+  },
+  "eef681f4133ef775390c2d221203d51d6b1cd725337b4a5b7c797ebc0b65357c": {
+    "reviewer": "Codex source-and-output inspection",
+    "reviewer_kind": "ai",
+    "factual_correctness": 1,
+    "teaching_usefulness": 1,
+    "evidence": "Pointer movement direction and one-based indexing are correct. Termination wording says until pointers cross, which can suggest using the same index at equality; the precise requirement is left < right. The multiple-pair question also does not match the guaranteed-unique-pair specification."
+  },
+  "e93c43f2f89ee8f03d10a18d555091e5b7c1ff432e23c112b283c4757426b812": {
+    "reviewer": "Codex source-and-output inspection",
+    "reviewer_kind": "ai",
+    "factual_correctness": 2,
+    "teaching_usefulness": 2,
+    "evidence": "Pseudocode explicitly uses left < right, handles both sum directions and equality, and returns one-based indices. The algorithm is consistent with the reviewed fixed problem."
+  },
+  "b6309e1800bea462cdcb93764e76370d959664891548fb65fc61b8defb491e69": {
+    "reviewer": "Codex source-and-output inspection",
+    "reviewer_kind": "ai",
+    "factual_correctness": 1,
+    "teaching_usefulness": 1,
+    "evidence": "The function and Big-O orders align with the canonical two-pointer approach by inspection. The explanation calls a decision rule an invariant and says each element is visited at most once, although a stationary endpoint can be reused. Generated code was not executed."
+  },
+  "9799b4fc5a216cf19a88e2c41c789c4c349e7203c496e152510fbd6a3c5112d5": {
+    "reviewer": "Codex source-and-output inspection",
+    "reviewer_kind": "ai",
+    "factual_correctness": 1,
+    "teaching_usefulness": 2,
+    "evidence": "Identifies the wrong movement when sum exceeds target and asks a targeted directional question. Focus names an else-if branch absent from the actual buggy code (it uses else); strictly increasing sum also ignores equal adjacent values."
+  }
+}
